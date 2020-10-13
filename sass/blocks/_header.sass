@@ -1,0 +1,167 @@
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px 0
+    &__logo-icon
+        width: 163px
+        height: 40px
+    .menu
+        width: 46.6%
+        &__list
+            display: flex
+            justify-content: space-between
+            margin: 0
+            padding: 0
+            list-style: none
+        &__link
+            font-family: "Lato-bl"
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+            text-decoration: none
+    .search
+        width: 23.1%
+        position: relative
+        border-radius: 10px
+        overflow: hidden
+        &__input
+            width: 100%
+            padding: 10px 55px 10px 25px
+            color: $color-w
+            border: 0
+            background-color: #656b70
+        &__button
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            padding: 10px 25px 10px 10px
+            border: 0
+            background-color: #656b70
+            cursor: pointer
+            &-icon
+                width: 20px
+                height: 20px
+.header
+    position: relative
+    background-color: $title
+    &-article
+        position: relative
+        display: flex
+        margin-top: 30px
+        border-radius: 10px
+        overflow: hidden
+        &__item
+            flex-basis: 71%
+            background-image: url(../img/main-page/1.header/article-bg.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+        &__recommended
+            flex-basis: 29%
+            background-color: $color-w
+    &-item
+        &__author
+            position: absolute
+            top: 55px
+            left: 55px
+            display: flex
+            align-items: center
+        &__avatar-wrapper
+            width: 45px
+            height: 45px
+            margin-right: 10px
+            border-radius: 50%
+            overflow: hidden
+        &__name
+            margin: 0 0 2px
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+        &__profession
+            margin: 0
+            font-size: 12px
+            line-height: 15px
+            color: $color-w
+            opacity: 0.4
+        &__content
+            position: absolute
+            bottom: 100px
+            left: 55px
+            width: 45%
+        &__direction
+            font-family: "Lato-bl", sans-serif
+            font-size: 12px
+            line-height: 15px
+            color: $button
+        &__title
+            margin: 20px 0 50px
+            font-family: "Roboto Slab", serif
+            font-weight: 700
+            font-size: 40px
+            line-height: 50px
+            color: $color-w
+        &__button
+            display: flex
+            align-items: center
+            width: max-content
+            padding: 10px 20px
+            border-radius: 20px
+            border: 0
+            background-color: $button
+            text-decoration: none
+        .item-button
+            &__text
+                margin-right: 5px
+                font-family: "Lato-bl",sans-serif
+                font-size: 14px
+                line-height: 20px
+                color: $color-w
+            &__icon
+                width: 20px
+                height: 20px
+.recommended
+    &__title
+        margin: 20px 0 20px
+        padding: 0 25px
+        font-family: "Lato-bl", sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $title
+    &__tap
+        min-height: 100px
+        padding: 19px 25px
+        border-top: 1px solid $lines
+.tap
+    &__title
+        margin: 0 0 8px
+        font-family: "Lato-bl",sans-serif
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5
+        text-transform: uppercase
+    &__txt
+        margin: 0
+        font-size: 14px
+        line-height: 20px
+        color: $text
+.css-b
+    color: #3BBDC4
+.js
+    color: #6E99AE
+.html
+    color: #AC8EE3
+.web
+    color: #FFA34D
+.css-g
+    color: #3DC47E
+.background
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 125px
+    background-color: #edeff0

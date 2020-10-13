@@ -12,27 +12,122 @@
   </head>
   <body>
     <header class="header">
+      <div class="background"></div>
       <div class="container">
         <div class="navbar">
           <div class="navbar__logo-wrapper">
-            <img src="#" alt="Логотип издания Universal" class="navbar-logo" />
-            <span class="navbar__name">Universal</span>
+            <svg class="navbar__logo-icon">
+              <use xlink:href="img/sprite.svg#header-main-logo"></use>
+            </svg>
           </div>
           <!-- /.navbar__logo-wrapper -->
           <nav class="menu navbar-menu">
-            <a href="#" class="menu__link">Статьи</a>
-            <a href="#" class="menu__link">Новости</a>
-            <a href="#" class="menu__link">Курсы</a>
-            <a href="#" class="menu__link">HTML</a>
-            <a href="#" class="menu__link">CSS</a>
-            <a href="#" class="menu__link">JavaScript</a>
-            <a href="#" class="menu__link">Web Design</a>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Курсы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">HTML</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">CSS</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">JavaScript</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Web Design</a>
+              </li>
+            </ul>
           </nav>
-          <form action="#" class="form navbar__search">
-            <input class="form__input" type="text" placeholder="Поиск" />
+          <form action="#" class="search navbar__search">
+            <input class="search__input" type="text" placeholder="Поиск" />
+            <button class="search__button">
+              <svg class="search__button-icon">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </button>
           </form>
         </div>
         <!-- /.navbar -->
+        <div class="header-article">
+          <div class="header-item header-article__item">
+            <div class="header-item__author">
+              <div class="header-item__avatar-wrapper">
+                <img
+                  src="img/main-page/1.header/author-avatar.png"
+                  alt="Изображение автора"
+                  class="header-item__avatar"
+                />
+              </div>
+              <!-- /.header-item__avatar-wrapper -->
+              <div class="header-item__info">
+                <p class="header-item__name">Давид Гуров</p>
+                <p class="header-item__profession">Разработчик</p>
+              </div>
+              <!-- /.header-item__info -->
+            </div>
+            <!-- /.header-item__author -->
+            <div class="header-item__content">
+              <p class="header-item__direction">JAVASCRIPT</p>
+              <h1 class="header-item__title">
+                Расширение Chrome защищает от атак
+              </h1>
+              <a href="#" class="button item-button header-item__button">
+                <span class="item-button__text">Читать далее</span>
+                <svg class="item-button__icon">
+                  <use xlink:href="img/sprite.svg#arrow-forward"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.header-item__content -->
+          </div>
+          <!-- /.header-item header-article__item -->
+          <div class="recommended header-article__recommended">
+            <h3 class="recommended__title">Рекомендуем</h3>
+            <div class="tap recommended__tap">
+              <h4 class="tap__title css-b">CSS</h4>
+              <p class="tap__txt">
+                Как использовать CSS float после того, как вышел Flexbox
+              </p>
+            </div>
+            <!-- /.recommended__tab -->
+            <div class="tap recommended__tap">
+              <h4 class="tap__title js">JAVASCRIPT</h4>
+              <p class="tap__txt">
+                На каком стандарте писать скрипты, если я фрилансер
+              </p>
+            </div>
+            <!-- /.recommended__tab -->
+            <div class="tap recommended__tap">
+              <h4 class="tap__title html">HTML</h4>
+              <p class="tap__txt">
+                Правильно вставляем картинку на сайт для Retina дисплея
+              </p>
+            </div>
+            <!-- /.recommended__tab -->
+            <div class="tap recommended__tap">
+              <h4 class="tap__title web">WEB DESIGN</h4>
+              <p class="tap__txt">ТОП-10 плагинов для Figma</p>
+            </div>
+            <!-- /.recommended__tab -->
+            <div class="tap recommended__tap">
+              <h4 class="tap__title css-g">CSS</h4>
+              <p class="tap__txt">
+                Возможности CSS Grid Layout , которые уже можно применять
+              </p>
+            </div>
+            <!-- /.recommended__tab -->
+          </div>
+          <!-- /.recommended header-article__recommended -->
+        </div>
+        <!-- /.header-article -->
       </div>
       <!-- /.container -->
     </header>
