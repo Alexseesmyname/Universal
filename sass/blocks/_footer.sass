@@ -1,0 +1,117 @@
+.footer
+    &-top
+        margin-bottom: 70px
+        padding: 60px 0 0
+        &__form
+            text-align: center
+        .form
+            font-size: 0
+            &__title
+                margin: 0 0 25px
+                font-family: "Roboto Slab", serif
+                font-weight: 700
+                font-size: 40px
+                line-height: 50px
+                color: $title
+            &__input
+                width: 313px
+                margin-right: 10px
+                padding: 10px 15px
+                font-size: 14px
+                line-height: 20px
+                border-radius: 5px
+                border: 1px solid #D9DADB
+            &__button
+                padding: 10px 25px
+                font-family: "Lato-bl", sans-serif
+                font-size: 14px
+                line-height: 20px
+                color: $color-w
+                border-radius: 20px
+                border: 0
+                background-color: $button
+    &-middle
+        display: grid
+        grid-template-columns: repeat(6,1fr)
+        &__item
+            border-top: 5px solid
+        &__title
+            margin: 30px 0 25px
+            font-family: "Lato-bl", sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: $title
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        .list
+            &__item
+                margin-bottom: 15px
+                &:last-child
+                    margin: 0
+            &__link
+                font-size: 14px
+                line-height: 20px
+                color: $text
+                text-decoration: none
+        .news
+            border-top-color: #FF4F52
+        .articles
+            border-top-color: #AC8EE3
+        .video
+            border-top-color: #4592FF
+        .courses
+            border-top-color: #FFA34D
+        .info
+            border-top-color: #3DC47E
+        .categories
+            border-top-color: #6E99AE
+        &__inner
+            grid-column: 1/7
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 64px
+            padding: 35px 0
+            border-top: 1px solid $lines
+            border-bottom: 1px solid $lines
+        &__text-wrapper
+            flex-basis: 45%
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__logo
+            &-icon
+                width: 50px
+                height: 50px
+        &__text
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            color: $title
+            text-transform: uppercase
+        &__social
+            font-size: 0
+            .social__link
+                margin-right: 15px
+                &:last-child
+                    margin: 0
+                &-icon
+                    width: 40px
+                    height: 40px
+    &-bottom
+        display: flex
+        justify-content: space-between
+        padding: 40px 0 55px
+        &__text
+            width: 70%
+            font-size: 14px
+            line-height: 20px
+            color: $grey
+        &__year
+            font-size: 14px
+            line-height: 20px
+            color: $grey
