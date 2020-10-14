@@ -31,6 +31,10 @@
             color: $color-w
             border: 0
             background-color: #656b70
+            &::-moz-placeholder
+                color: $grey
+            &::-webkit-input-placeholder
+                color: $grey
         &__button
             position: absolute
             right: 0
@@ -53,12 +57,12 @@
         border-radius: 10px
         overflow: hidden
         &__item
-            flex-basis: 71%
+            flex-basis: 77%
             background-image: url(../img/main-page/1.header/article-bg.jpg)
             background-size: cover
             background-repeat: no-repeat
         &__recommended
-            flex-basis: 29%
+            flex-basis: 23%
             background-color: $color-w
     &-item
         &__author
@@ -78,6 +82,7 @@
             font-size: 14px
             line-height: 20px
             color: $color-w
+            opacity: 0.85
         &__profession
             margin: 0
             font-size: 12px
