@@ -1,0 +1,207 @@
+.bottom-content
+    background-color: $title
+    &__container
+        display: grid
+        grid-template-columns: 2fr 1fr 1fr
+        grid-template-rows: repeat(2,max-content)
+        grid-gap: 30px
+        padding: 60px 0
+.swiper
+    &-slider
+        grid-column: 1/2
+        grid-row: 1/3
+        display: flex
+        align-items: flex-start
+        &__container
+            max-width: 555px
+            width: 100%
+            height: 100%
+    &-pagination
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 40px
+.slider-bullet
+    width: 8px
+    height: 8px
+    margin: 0 8px
+    border-radius: 50%
+    background-color: $lines
+    flex-shrink: 0
+    cursor: pointer
+.slide
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    overflow: hidden
+    background-image: url(../img/main-page/5.readers-choice/slider-img.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &__lable
+        position: absolute
+        top: 18px
+        left: 18px
+        z-index: 1
+        padding: 5px 12px
+        font-size: 12px
+        line-height: 15px
+        color: $color-w
+        background-color: #3dc47e
+        border-radius: 3px
+    &__content
+        position: absolute
+        top: 50px
+        left: 50px
+        right: 50px
+        z-index: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__author
+        display: flex
+        flex-direction: column
+        align-items: center
+    .author
+        &__avatar-wrapper
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            overflow: hidden
+        &__avatar
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &__name
+            margin: 8px 0 2px
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+            opacity: 0.85
+        &__profession
+            margin: 0 0 30px
+            font-size: 12px
+            line-height: 15px
+            color: $color-w
+            opacity: 0.4
+    &__title
+        margin: 0 0 45px
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        text-align: center
+        color: $color-w
+    &__link
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 194px
+        padding: 10px 20px
+        border-radius: 20px
+        overflow: hidden
+        background-color: #4592ff
+        text-decoration: none
+        &-txt
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+        &-number
+            font-size: 14px
+            line-height: 20px
+            color: #c5e4fc
+        &-icon
+            width: 20px
+            height: 20px
+            flex-shrink: 0
+.bottom-article
+    grid-column: 2/4
+    grid-row: 1/2
+    position: relative
+    height: 370px
+    width: 555px
+    border-radius: 10px
+    overflow: hidden
+    background-color: #b4d1e0
+    &__bg-circle
+        position: absolute
+        z-index: 1
+        top: 65px
+        bottom: 45px
+        right: 30px
+        width: 260px
+        height: 260px
+        border-radius: 50%
+        background-color: #d1e2eb
+    &__bg-img-wrapper
+        position: absolute
+        z-index: 2
+        right: 0
+        top: 0
+        bottom: 0
+    &__bg-img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__content
+        position: absolute
+        z-index: 2
+        top: 35px
+        left: 35px
+        width: 40%
+    &__direction
+        margin: 0 0 20px
+        font-family: "Lato-bl", sans-serif
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6e99ae
+    &__title
+        margin: 0 0 15px
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        color: $title
+    &__txt
+        margin: 0 0 45px
+        font-size: 14px
+        line-height: 20px
+        color: $text
+    &__link
+        display: flex
+        align-items: center
+        width: max-content
+        padding: 10px 20px
+        background-color: $button
+        border: 0
+        border-radius: 20px
+        text-decoration: none
+    &__link-txt
+        margin-right: 5px
+        font-family: "Lato-bl", sans-serif
+        font-size: 14px
+        line-height: 20px
+        color: $color-w
+    &__link-icon
+        width: 20px
+        height: 20px
+        flex-shrink: 0
+.bottom-content__article
+    &_first
+        grid-column: 2/3
+        grid-row: 2/3
+    &_sec
+        grid-column: 3/4
+        grid-row: 2/3

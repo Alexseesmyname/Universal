@@ -1,6 +1,7 @@
 .footer
+    background-color: $color-w
     &-top
-        margin-bottom: 70px
+        margin-bottom: 65px
         padding: 60px 0 0
         &__form
             text-align: center
@@ -36,7 +37,7 @@
                 background-color: $button
     &-middle
         display: grid
-        grid-template-columns: repeat(6,1fr)
+        grid-template-columns: repeat(5,17%) 1fr
         &__item
             border-top: 5px solid
         &__title
@@ -60,17 +61,17 @@
                 line-height: 20px
                 color: $text
                 text-decoration: none
-        .news
+        &__news
             border-top-color: #FF4F52
-        .articles
+        &__articles
             border-top-color: #AC8EE3
-        .video
+        &__video
             border-top-color: #4592FF
-        .courses
+        &__courses
             border-top-color: #FFA34D
-        .info
+        &__info
             border-top-color: #3DC47E
-        .categories
+        &__categories
             border-top-color: #6E99AE
         &__inner
             grid-column: 1/7
@@ -78,11 +79,11 @@
             justify-content: space-between
             align-items: center
             margin-top: 64px
-            padding: 35px 0
+            padding: 30px 0
             border-top: 1px solid $lines
             border-bottom: 1px solid $lines
         &__text-wrapper
-            flex-basis: 45%
+            flex-basis: 48%
             display: flex
             align-items: center
             justify-content: space-between
@@ -99,7 +100,7 @@
             text-transform: uppercase
         &__social
             font-size: 0
-            .social__link
+            &-link
                 margin-right: 15px
                 &:last-child
                     margin: 0
@@ -109,7 +110,7 @@
     &-bottom
         display: flex
         justify-content: space-between
-        padding: 40px 0 55px
+        padding: 25px 0 40px
         &__text
             width: 70%
             font-size: 14px
