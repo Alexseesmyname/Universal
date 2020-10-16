@@ -18,3 +18,63 @@
         color: $title
     &__slider-wrapper
         padding: 45px 0 30px
+.article-swiper
+    border: 1px solid $lines
+    border-radius: 10px
+    overflow: hidden
+    &__img-wrapper
+        width: 100%
+        height: 100%
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+    &__description
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-height: 71px
+        &-txt
+            flex-basis: 77%
+            padding: 0 35px
+            font-size: 14px
+            line-height: 20px
+            color: $text
+    &__button
+        position: absolute
+        z-index: 99
+        top: 40%
+        cursor: pointer
+        &_prev
+            left: 35px
+        &_next
+            right: 35px
+    &__icon
+        width: 60px
+        height: 60px
+.description-author
+    flex-basis: 23%
+    display: flex
+    align-items: center
+    padding: 13px 30px
+    border-left: 1px solid $lines
+    &__avatar-wrapper
+        width: 45px
+        height: 45px
+        margin-right: 10px
+        border-radius: 50%
+        overflow: hidden
+    &__avatar
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__name
+        margin: 0 0 2px
+        font-size: 14px
+        line-height: 20px
+        color: $text
+    &__profession
+        margin: 0
+        font-size: 12px
+        line-height: 15px
+        color: $grey
