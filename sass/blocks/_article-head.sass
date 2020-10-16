@@ -1,0 +1,194 @@
+.article-head
+    background-color: $color-w
+    &__direction
+        font-family: "Lato-bl", sans-serif
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        text-align: center
+        color: #4592ff
+    &__navbar
+        flex-basis: 31%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-decoration: none
+        &-txt
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+    .home-link
+        margin-right: 10px
+    .home,.back,.forward
+        width: 20px
+        height: 20px
+        flex-shrink: 0
+    .home,.back
+        margin-right: 5px
+    .forward
+        margin-left: 5px
+    &__title
+        width: 80%
+        margin: 0
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 55px
+        line-height: 70px
+        color: $color-w
+    &__subtitle
+        width: 67%
+        margin: 0 0 45px
+        font-size: 18px
+        line-height: 30px
+        color: $color-w
+        opacity: 0.85
+    &__txt
+        margin: 0
+        font-size: 18px
+        line-height: 30px
+        color: $text
+.top
+    position: relative
+    background-image: url(../img/main-page/4.articles/1-article.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 590px
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    &__container.container
+        position: absolute
+        z-index: 1
+        top: 60px
+        left: 0
+        right: 0
+        width: 946px
+        height: 590px
+    &__upper-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 50px
+    &__middle-content
+        display: flex
+        align-items: flex-start
+        margin-bottom: 30px
+    &__bottom-content
+        margin-bottom: 72px
+    &__icon
+        position: absolute
+        left: -99px
+        top: 91px
+        flex-shrink: 0
+        width: 30px
+        height: 30px
+        fill: $color-w
+        opacity: 0.4
+.date
+    display: flex
+    align-items: center
+    &__icon
+        width: 15px
+        height: 15px
+        margin-right: 5px
+        flex-shrink: 0
+    &__txt
+        font-size: 12px
+        line-height: 15px
+        color: $color-w
+        opacity: 0.85
+.article-head__likes-icon,
+.article-head__comments-icon
+    color: $color-w
+    opacity: 0.4
+.article-head__likes-number,
+.article-head__comments-number
+    color: $color-w
+    opacity: 0.85
+.article-head__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 23%
+.bottom
+    padding: 60px 0 15px
+    &__container
+        position: relative
+        width: 946px
+        display: flex
+        justify-content: space-between
+    &__txt
+        flex-basis: 65%
+        &::first-letter
+            font-family: "Lato-bl", sans-serif
+            font-size: 100px
+            line-height: 75px
+            float: left
+            color: #4592ff
+.article-author
+    position: absolute
+    z-index: 5
+    right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: max-content
+    margin-top: -160px
+    border: 1px solid $lines
+    border-radius: 10px
+    background-color: $color-w
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 35px 58px 20px
+    &__avatar-wrapper
+        width: 90px
+        height: 90px
+        margin-bottom: 15px
+        border-radius: 50%
+        overflow: hidden
+    &__avatar
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__name
+        margin: 0 0 5px
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        color: $title
+    &__profession
+        margin: 0 0 15px
+        font-size: 14px
+        line-height: 20px
+        color: $text
+    &__works
+        margin: 0
+        font-family: "Lato-bl", sans-serif
+        font-size: 14px
+        line-height: 20px
+        color: $title
+    &__link
+        width: 100%
+        padding: 15px 25px
+        font-family: "Lato-bl", sans-serif
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+        color: $title
+        border-top: 1px solid $lines
+        text-decoration: none

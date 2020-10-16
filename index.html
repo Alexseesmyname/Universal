@@ -89,7 +89,10 @@
               <h1 class="header-item__title">
                 Расширение Chrome защищает от атак
               </h1>
-              <a href="#" class="button item-button header-item__button">
+              <a
+                href="article.html"
+                class="button item-button header-item__button"
+              >
                 <span class="item-button__text">Читать далее</span>
                 <svg class="item-button__icon">
                   <use xlink:href="img/sprite.svg#arrow-forward"></use>
@@ -340,7 +343,7 @@
         </div>
         <!-- /.article -->
         <div class="article customer">
-          <h3 class="article__title">Заказчики &ndash; мудаки?</h3>
+          <h3 class="article__title">Заказчики &mdash; мудаки?</h3>
           <p class="article__text">
             Как защититься от бесконечных правок на этапе сдачи проекта
           </p>
@@ -348,7 +351,7 @@
         </div>
         <!-- /.article -->
         <div class="article work">
-          <h3 class="article__title">Работа без стресса &ndash; это...</h3>
+          <h3 class="article__title">Работа без стресса &mdash; это...</h3>
           <p class="article__text">
             Обустройте свое рабочее место так, чтобы не испытывать раздражение
             от скрипучего...
@@ -419,7 +422,7 @@
             Расследование недели: сколько<br />
             зарабатывает веб разработчик в Москве
           </h2>
-          <a href="#" class="investigation__link">
+          <a href="article.html" class="investigation__link">
             <span class="investigation__text">Читать статью</span>
             <svg class="investigation__link-icon">
               <use xlink:href="img/sprite.svg#arrow-forward"></use>
@@ -445,7 +448,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction news">Новости</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -492,7 +495,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction opinion">Мнения</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -539,7 +542,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction hot">Горячее</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -587,7 +590,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction opinion">Мнения</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -635,7 +638,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction hot">Горячее</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -680,7 +683,7 @@
             <div class="item__content">
               <div class="item__direction-wrapper">
                 <span class="item__direction collections">Подборки</span>
-                <svg class="item__icon">
+                <svg class="item__icon" id="bookmark">
                   <use xlink:href="img/sprite.svg#bookmark"></use>
                 </svg>
               </div>
@@ -879,167 +882,90 @@
     <section class="bottom-content">
       <div class="container bottom-content__container">
         <div class="swiper-slider">
-          <!-- Slider main container -->
           <div class="swiper-container swiper-slider__container">
+            <div class="swiper-slider__content-wrapper">
+              <span class="swiper-slider__lable">Горячее</span>
+              <div class="swiper-slider__content">
+                <div class="author swiper-slider__author">
+                  <div class="author__avatar-wrapper">
+                    <img
+                      src="img/main-page/5.readers-choice/photographer-avatar.png"
+                      alt="Аватар фотографа"
+                      class="author__avatar"
+                    />
+                  </div>
+                  <p class="author__name">Оксана Пушкина</p>
+                  <p class="author__profession">Фотограф</p>
+                </div>
+                <!-- /.swiper-slider__author -->
+                <h2 class="swiper-slider__title">
+                  Выбор читателей: где удобнее работать фрилансеру
+                </h2>
+                <a href="#" class="swiper-slider__link">
+                  <svg class="swiper-slider__link-icon">
+                    <use xlink:href="img/sprite.svg#photo-icon"></use>
+                  </svg>
+                  <span class="swiper-slider__link-txt">Смотреть фото</span>
+                  <span class="swiper-slider__link-number">26</span>
+                </a>
+              </div>
+              <!-- /.swiper-slider__content -->
+            </div>
+            <!-- /.swper-slider__content-wrapper -->
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper swiper-slider__wrapper">
               <!-- Slides -->
               <div class="swiper-slide swiper-slider__slide">
                 <div class="slide">
-                  <span class="slide__lable">Горячее</span>
-                  <div class="slide__content">
-                    <div class="author slide__author">
-                      <div class="author__avatar-wrapper">
-                        <img
-                          src="img/main-page/5.readers-choice/photographer-avatar.png"
-                          alt="Аватар фотографа"
-                          class="author__avatar"
-                        />
-                      </div>
-                      <p class="author__name">Оксана Пушкина</p>
-                      <p class="author__profession">Фотограф</p>
-                    </div>
-                    <!-- /.slide__author -->
-                    <h2 class="slide__title">
-                      Выбор читателей: где удобнее работать фрилансеру
-                    </h2>
-                    <a href="#" class="slide__link">
-                      <svg class="slide__link-icon">
-                        <use xlink:href="img/sprite.svg#photo-icon"></use>
-                      </svg>
-                      <span class="slide__link-txt">Смотреть фото</span>
-                      <span class="slide__link-number">26</span>
-                    </a>
-                  </div>
-                  <!-- /.slide__content -->
+                  <img
+                    src="img/main-page/5.readers-choice/slider-img.jpg"
+                    alt="Изображение"
+                    class="slide__img"
+                  />
                 </div>
                 <!-- /.slide -->
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide swiper-slider__slide">
                 <div class="slide">
-                  <span class="slide__lable">Горячее</span>
-                  <div class="slide__content">
-                    <div class="author slide__author">
-                      <div class="author__avatar-wrapper">
-                        <img
-                          src="img/main-page/5.readers-choice/photographer-avatar.png"
-                          alt="Аватар фотографа"
-                          class="author__avatar"
-                        />
-                      </div>
-                      <p class="author__name">Оксана Пушкина</p>
-                      <p class="author__profession">Фотограф</p>
-                    </div>
-                    <!-- /.slide__author -->
-                    <h2 class="slide__title">
-                      Выбор читателей: где удобнее работать фрилансеру
-                    </h2>
-                    <a href="#" class="slide__link">
-                      <svg class="slide__link-icon">
-                        <use xlink:href="img/sprite.svg#photo-icon"></use>
-                      </svg>
-                      <span class="slide__link-txt">Смотреть фото</span>
-                      <span class="slide__link-number">26</span>
-                    </a>
-                  </div>
-                  <!-- /.slide__content -->
+                  <img
+                    src="img/main-page/5.readers-choice/slider-img.jpg"
+                    alt="Изображение"
+                    class="slide__img"
+                  />
                 </div>
                 <!-- /.slide -->
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide swiper-slider__slide">
                 <div class="slide">
-                  <span class="slide__lable">Горячее</span>
-                  <div class="slide__content">
-                    <div class="author slide__author">
-                      <div class="author__avatar-wrapper">
-                        <img
-                          src="img/main-page/5.readers-choice/photographer-avatar.png"
-                          alt="Аватар фотографа"
-                          class="author__avatar"
-                        />
-                      </div>
-                      <p class="author__name">Оксана Пушкина</p>
-                      <p class="author__profession">Фотограф</p>
-                    </div>
-                    <!-- /.slide__author -->
-                    <h2 class="slide__title">
-                      Выбор читателей: где удобнее работать фрилансеру
-                    </h2>
-                    <a href="#" class="slide__link">
-                      <svg class="slide__link-icon">
-                        <use xlink:href="img/sprite.svg#photo-icon"></use>
-                      </svg>
-                      <span class="slide__link-txt">Смотреть фото</span>
-                      <span class="slide__link-number">26</span>
-                    </a>
-                  </div>
-                  <!-- /.slide__content -->
+                  <img
+                    src="img/main-page/5.readers-choice/slider-img.jpg"
+                    alt="Изображение"
+                    class="slide__img"
+                  />
                 </div>
                 <!-- /.slide -->
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide swiper-slider__slide">
                 <div class="slide">
-                  <span class="slide__lable">Горячее</span>
-                  <div class="slide__content">
-                    <div class="author slide__author">
-                      <div class="author__avatar-wrapper">
-                        <img
-                          src="img/main-page/5.readers-choice/photographer-avatar.png"
-                          alt="Аватар фотографа"
-                          class="author__avatar"
-                        />
-                      </div>
-                      <p class="author__name">Оксана Пушкина</p>
-                      <p class="author__profession">Фотограф</p>
-                    </div>
-                    <!-- /.slide__author -->
-                    <h2 class="slide__title">
-                      Выбор читателей: где удобнее работать фрилансеру
-                    </h2>
-                    <a href="#" class="slide__link">
-                      <svg class="slide__link-icon">
-                        <use xlink:href="img/sprite.svg#photo-icon"></use>
-                      </svg>
-                      <span class="slide__link-txt">Смотреть фото</span>
-                      <span class="slide__link-number">26</span>
-                    </a>
-                  </div>
-                  <!-- /.slide__content -->
+                  <img
+                    src="img/main-page/5.readers-choice/slider-img.jpg"
+                    alt="Изображение"
+                    class="slide__img"
+                  />
                 </div>
                 <!-- /.slide -->
               </div>
               <!-- /.swiper-slide -->
               <div class="swiper-slide swiper-slider__slide">
                 <div class="slide">
-                  <span class="slide__lable">Горячее</span>
-                  <div class="slide__content">
-                    <div class="author slide__author">
-                      <div class="author__avatar-wrapper">
-                        <img
-                          src="img/main-page/5.readers-choice/photographer-avatar.png"
-                          alt="Аватар фотографа"
-                          class="author__avatar"
-                        />
-                      </div>
-                      <p class="author__name">Оксана Пушкина</p>
-                      <p class="author__profession">Фотограф</p>
-                    </div>
-                    <!-- /.slide__author -->
-                    <h2 class="slide__title">
-                      Выбор читателей: где удобнее работать фрилансеру
-                    </h2>
-                    <a href="#" class="slide__link">
-                      <svg class="slide__link-icon">
-                        <use xlink:href="img/sprite.svg#photo-icon"></use>
-                      </svg>
-                      <span class="slide__link-txt">Смотреть фото</span>
-                      <span class="slide__link-number">26</span>
-                    </a>
-                  </div>
-                  <!-- /.slide__content -->
+                  <img
+                    src="img/main-page/5.readers-choice/slider-img.jpg"
+                    alt="Изображение"
+                    class="slide__img"
+                  />
                 </div>
                 <!-- /.slide -->
               </div>
@@ -1253,22 +1179,31 @@
             </div>
             <!-- /.footer-middle__text-wrapper -->
             <div class="footer-middle__social">
-              <a href="#" class="footer-middle__social-link">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-middle__social-link"
+              >
                 <svg class="footer-middle__social-link-icon">
                   <use xlink:href="img/sprite.svg#fb"></use>
                 </svg>
               </a>
-              <a href="#" class="footer-middle__social-link">
+              <a href="https://twitter.com/" class="footer-middle__social-link">
                 <svg class="footer-middle__social-link-icon">
                   <use xlink:href="img/sprite.svg#main-twitter"></use>
                 </svg>
               </a>
-              <a href="#" class="footer-middle__social-link">
+              <a
+                href="https://www.youtube.com/"
+                class="footer-middle__social-link"
+              >
                 <svg class="footer-middle__social-link-icon">
                   <use xlink:href="img/sprite.svg#yt"></use>
                 </svg>
               </a>
-              <a href="#" class="footer-middle__social-link">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-middle__social-link"
+              >
                 <svg class="footer-middle__social-link-icon">
                   <use xlink:href="img/sprite.svg#inst"></use>
                 </svg>
