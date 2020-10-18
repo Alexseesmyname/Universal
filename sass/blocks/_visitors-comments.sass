@@ -1,0 +1,220 @@
+.visitors-comments
+    padding: 90px 0 35px
+    background-color: $color-w
+    &__container
+        width: 946px
+    &__top-bar
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 79.5%
+        margin-bottom: 29px
+    &__title
+        display: inline-block
+        margin: 0
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        color: $title
+    &__number
+        margin-left: 10px
+        font-size: 40px
+        line-height: 50px
+        color: $grey
+    &__inner
+        width: 79.5%
+        border-top: 1px solid $lines
+        &_hidden
+            visibility: hidden
+.comment-button
+    &-add
+        display: flex
+        align-items: center
+        padding: 10px 20px
+        border: 1px solid $lines
+        border-radius: 20px
+        background-color: $color-w
+        cursor: pointer
+        &__icon
+            margin-right: 10px
+            width: 20px
+            height: 20px
+            flex-shrink: 0
+        &__txt
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $title
+    &-more
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 80%
+        padding: 13px 20px
+        border: 1px solid $lines
+        border-radius: 25px
+        background-color: $color-w
+        cursor: pointer
+        &__icon
+            margin-right: 7px
+            width: 15px
+            height: 15px
+            flex-shrink: 0
+        &__txt
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $title
+.comment-item
+    display: flex
+    width: 740px
+    padding: 20px 0 29px
+    &__avatar-wrapper
+        width: 75px
+        height: 75px
+        margin-right: 15px
+        border-radius: 50%
+        overflow: hidden
+        flex-shrink: 0
+    &__avatar
+        height: 100%
+        width: 100%
+        object-fit: cover
+    &__content-wrapper
+        width: 78%
+    &__top
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+    &__name
+        margin: 0 10px 0 0
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 16px
+        line-height: 25px
+        color: $title
+    &__date
+        font-size: 12px
+        line-height: 15px
+        color: $grey
+    &__middle
+        margin-bottom: 15px
+    &__text
+        margin: 0
+        font-size: 18px
+        line-height: 30px
+        color: $text
+    &__bottom
+        display: flex
+        align-items: center
+    &_hidden
+        display: none
+    &__strange-comment
+        margin-bottom: 47px
+.answer-item
+    padding-left: 90px
+.comments
+    margin-right: 15px
+    &__answer-txt
+        font-size: 12px
+        line-height: 15px
+        color: $title
+.rating
+    display: flex
+    align-items: center
+    &__icon
+        width: 15px
+        height: 15px
+        flex-shrink: 0
+    &__value
+        margin: 0 10px
+        font-size: 12px
+        line-height: 15px
+.plus
+    color: #3dc47e
+.zero
+    color: $grey
+.minus
+    color: #FF4F52
+.review
+    position: relative
+    margin-top: 60px
+    width: 79.5%
+    height: 290px
+    border-radius: 10px
+    background-color: #f5f5f5
+    &__inner
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 2
+        display: flex
+        align-items: center
+        padding: 30px 40px 35px 30px
+    &__avatar-wrapper
+        width: 75px
+        height: 75px
+        margin-top: -65px
+        margin-right: 20px
+        border-radius: 50%
+        overflow: hidden
+        flex-shrink: 0
+    &__avatar
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__content
+        width: 100%
+    &__title
+        margin: 0 0 15px
+        font-family: "Roboto Slab", serif
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        color: $title
+    &__textarea
+        width: 100%
+        height: 130px
+        margin-bottom: 15px
+        padding: 10px 15px
+        border: 1px solid $lines
+        border-radius: 5px
+        resize: none
+    &__button
+        display: flex
+        align-items: center
+        padding: 10px 20px
+        background-color: $button
+        border-radius: 20px
+        border: 0
+        &-txt
+            margin-right: 5px
+            font-family: "Lato-bl", sans-serif
+            font-size: 14px
+            line-height: 20px
+            color: $color-w
+    &__icon
+        width: 20px
+        height: 20px
+        flex-shrink: 0
+.big-angle
+    position: absolute
+    z-index: 1
+    top: 99px
+    left: 103px
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 14px solid $lines
+    border-left: 10px solid transparent
+.little-angle
+    position: absolute
+    z-index: 3
+    top: 99px
+    left: 105px
+    border-top: 10px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 13px solid $color-w
+    border-left: 10px solid transparent
