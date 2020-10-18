@@ -17,6 +17,8 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery-3.5.1.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="js/article-page.js" defer></script>
   </head>
@@ -24,14 +26,17 @@
     <header class="header article-header">
       <div class="container">
         <div class="navbar article-navbar">
-          <div class="navbar__logo-wrapper article-navbar__logo-wrapper">
+          <a
+            href="index.html"
+            class="navbar__logo-wrapper article-navbar__logo-wrapper"
+          >
             <svg class="navbar__logo-icon article-navbar__logo-icon">
               <use xlink:href="img/sprite.svg#article-logo"></use>
             </svg>
             <svg class="navbar__logo-icon article-navbar__universal-icon">
               <use xlink:href="img/sprite.svg#article-universal"></use>
             </svg>
-          </div>
+          </a>
           <!-- /.navbar__logo-wrapper -->
           <nav class="menu navbar-menu article-navbar__menu">
             <ul class="menu__list article-navbar__list">
@@ -1043,10 +1048,15 @@
               <!-- /.review__avatar-wrapper -->
               <div class="review__content">
                 <h3 class="review__title">Что вы думаете на этот счет?</h3>
-                <form action="article.php" method="POST" class="review__form">
+                <form
+                  action="article.php"
+                  method="POST"
+                  class="form review__form"
+                >
                   <textarea
                     name="message"
                     minlength="100"
+                    required
                     class="review__textarea"
                   ></textarea>
                   <button class="review__button">
@@ -1076,12 +1086,15 @@
             class="form footer-top__form"
           >
             <h2 class="form__title">Подпишитесь на нашу рассылку</h2>
-            <input
-              class="form__input"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
+            <div class="form__input-group">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
             <button class="form__button button">
               <span class="form__button-txt">Подписаться</span>
             </button>

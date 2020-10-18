@@ -1,3 +1,5 @@
+$(document).ready(function () {
+    
 //Слайдер в статье
 var mySwiper = new Swiper('.article-swiper', {
   // Optional parameters
@@ -22,4 +24,27 @@ moreBtn.addEventListener("click", function(){
     comment.forEach(function(item){
         item.classList.remove("visitors-comments__inner_hidden");
     });
+});
+
+//Валидация
+$(".footer-top__form").validate({
+    messages: {
+    email: {
+      required: "Пожалуйста, введите ваш email",
+      email: "Ваш email должен быть в формате name@domain.com"
+    },
+  }
+
+});
+$(".review__form").validate({
+    messages: {
+        message: {
+            required: "Пожалуйста, напишите сообщение",
+            minlength: "Ваше сообщение должно быть не короче 100 символов"
+    },
+    }
+});
+$(".review__form").on("DOMNodeInserted", function(){
+    $("#message-error").addClass("message-error");
+})
 });

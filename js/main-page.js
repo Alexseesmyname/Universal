@@ -1,3 +1,5 @@
+$(document).ready(function () {
+  
 //Тапы
 const tapButtons = document.querySelectorAll(".tap");
 const tapItems = document.querySelectorAll(".header-item");
@@ -48,5 +50,18 @@ var mySwiper = new Swiper('.swiper-slider__container', {
     type: 'bullets',
     clickable: true,
   },
+
+});
+
+//Валидация
+$(".footer-top__form").validate({
+    messages: {
+    email: {
+      required: "Пожалуйста, введите ваш email",
+      email: "Ваш email должен быть в формате name@domain.com"
+    }
+  }
+
+});
 
 });
