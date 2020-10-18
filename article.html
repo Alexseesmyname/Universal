@@ -1043,7 +1043,7 @@
               <!-- /.review__avatar-wrapper -->
               <div class="review__content">
                 <h3 class="review__title">Что вы думаете на этот счет?</h3>
-                <form action="#" class="review__form">
+                <form action="article.php" method="POST" class="review__form">
                   <textarea
                     name="message"
                     minlength="100"
@@ -1070,14 +1070,21 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <form action="#" class="form footer-top__form">
+          <form
+            action="article.php"
+            method="POST"
+            class="form footer-top__form"
+          >
             <h2 class="form__title">Подпишитесь на нашу рассылку</h2>
-            <input class="form__input" type="text" placeholder="Email" />
             <input
-              type="button"
-              class="button form__button"
-              value="Подписаться"
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
             />
+            <button class="form__button button">
+              <span class="form__button-txt">Подписаться</span>
+            </button>
           </form>
         </div>
         <!-- /.footer-top -->
