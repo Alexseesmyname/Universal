@@ -50,20 +50,3 @@ var mySwiper = new Swiper('.swiper-slider__container', {
   },
 
 });
-
-//Слайдер в статье
-var mySwiper = new Swiper('.article-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.article-swiper__button_next',
-    prevEl: '.article-swiper__button_prev',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
