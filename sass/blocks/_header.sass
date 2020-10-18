@@ -65,6 +65,9 @@
             flex-basis: 23%
             background-color: $color-w
     &-item
+        display: none
+        &_active
+            display: block
         &__author
             position: absolute
             top: 55px
@@ -122,6 +125,14 @@
                 font-size: 14px
                 line-height: 20px
                 color: $color-w
+                &_red
+                    color: red
+                &_black
+                    color: black
+                &_yellow
+                    color: yellow
+                &_coral
+                    color: coral
             &__icon
                 width: 20px
                 height: 20px
@@ -161,6 +172,8 @@
         padding: 19px 25px
         border-top: 1px solid $lines
 .tap
+    &_active
+        background-color: #f5f5f5
     &__title
         margin: 0 0 8px
         font-family: "Lato-bl",sans-serif
