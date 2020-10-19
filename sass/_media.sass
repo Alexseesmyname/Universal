@@ -1,0 +1,208 @@
+
+@media (max-width: 992px)
+    .container
+        width: 670px
+    .header
+        .navbar
+            flex-wrap: wrap
+            .menu
+                flex-basis: 100%
+                order: 1
+                margin-top: 25px
+                &__link
+                    font-size: 16px
+                    line-height: 20px
+            .search
+                width: 39.4%
+        &-article
+            height: max-content
+            margin-top: 15px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 75px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+        .recommended
+            &__title
+                margin: 10px 0
+                padding: 0 15px
+                font-size: 12px
+                line-height: 15px
+            &__tap
+                min-height: 71px
+                padding: 10px 15px
+        .tap
+            &__txt
+                font-size: 12px
+                line-height: 15px
+    .main
+        &__container
+            grid-template-columns: repeat(2,1fr)
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 10px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 2/3
+            grid-row: 3/4
+            &__img-wrapper
+                width: 100%
+        .article
+            justify-content: space-between
+        .lucky
+            grid-column: 1/2
+            grid-row: 4/5
+        .customer
+            grid-column: 2/3
+            grid-row: 4/5
+            .article__text
+                margin: 0 0 10px
+        .work
+            grid-column: 1/2
+            grid-row: 5/6
+        .free
+            grid-column: 2/3
+            grid-row: 5/6
+        .tags
+            grid-column: 1/2
+            grid-row: 6/8
+            &__content
+                padding: 25px 35px 30px
+        .download
+            grid-column: 2/3
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 7/8
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr
+        .item
+            &__img-wrapper
+                height: 279px
+            &__content
+                flex-basis: 42%
+            &__info
+                left: 64%
+        .recent
+            display: none
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    max-width: 670px
+                    width: 100%
+                    height: 518px
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+        .bottom-article
+            grid-column: 1/3
+            grid-row: 2/3
+            width: 100%
+            &__bg-circle
+                right: 40px
+                bottom: 50px
+                top: 60px
+                width: 280px
+                height: 280px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+            &-txt
+                margin: 0 0 30px
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 47%
+        &-middle
+            grid-template-columns: repeat(3, 33.3%)
+            row-gap: 30px
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 3/4
+                grid-row: 1/2
+            &__courses
+                grid-column: 1/2
+                grid-row: 2/3
+            &__info
+                grid-column: 2/3
+                grid-row: 2/3
+            &__categories
+                grid-column: 3/4
+                grid-row: 2/3
+            &__inner
+                grid-column: 1/4
+                padding: 30px 0 20px
+            &__text-wrapper
+                flex-basis: 75%
+            &__social
+                flex-basis: 20%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end

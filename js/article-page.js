@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    
+
+//Смена цвета закладки
+const mark = document.querySelector(".bookmark");
+mark.addEventListener("click", function(){
+  mark.classList.toggle("bookmark_active");
+});
+
 //Слайдер в статье
 var mySwiper = new Swiper('.article-swiper', {
   // Optional parameters

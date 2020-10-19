@@ -16,7 +16,7 @@
     position: relative
     display: flex
     justify-content: space-between
-    padding: 25px 0
+    padding: 24.5px 0
     border-bottom: 1px solid $lines
     &:last-child
         border-bottom: 0
@@ -28,12 +28,13 @@
         height: 100%
         object-fit: cover
     &__content
-        flex-basis: 54.6%
+        flex-basis: 54.7%
     &__direction-wrapper
         display: flex
         align-items: center
         justify-content: space-between
     &__direction
+        padding-top: 5px
         font-family: "Lato-bl", sans-serif
         font-size: 12px
         line-height: 15px
@@ -48,9 +49,9 @@
     .collections
         color: #AC8EE3
 
-    &__icon
-        width: 14px
-        height: 18px
+    &__icon.bookmark
+        width: 20px
+        height: 20px
         fill: #bcbfc2
         cursor: pointer
         &_active

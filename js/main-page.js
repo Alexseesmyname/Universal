@@ -27,7 +27,7 @@ tapButtons.forEach(function(tap){
 document.querySelector(".tap").click();
 
 //Смена цвета у закладок
-const marks = document.querySelectorAll("#bookmark");
+const marks = document.querySelectorAll(".bookmark");
 for(let mark of marks){
   mark.addEventListener("click", function(event){
     mark.classList.toggle("item__icon_active");

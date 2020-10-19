@@ -46,6 +46,7 @@
     border-radius: 10px
     background-color: $color-w
     overflow: hidden
+    text-decoration: none
     &__content
         position: relative
         &-inner
@@ -83,12 +84,12 @@
     &__author
         display: flex
         align-items: center
-        justify-content: space-between
         padding: 13px 35px
         border-top: 1px solid $lines
     &__avatar-wrapper
         width: 30px
         height: 30px
+        margin-right: 10px
         border-radius: 50%
         overflow: hidden
     &__avatar
@@ -96,6 +97,7 @@
         height: 100%
         object-fit: cover
     &__name
+        margin-right: 5px
         font-family: "Lato-bl", sans-serif
         font-size: 14px
         line-height: 20px
@@ -103,6 +105,7 @@
     &__comments
         display: flex
         align-items: center
+        margin-left: 13px
     &__icon
         width: 15px
         height: 15px
@@ -121,6 +124,7 @@
     background-position: center
     border-radius: 10px
     overflow: hidden
+    text-decoration: none
     &::after
         position: absolute
         content: ""
@@ -143,7 +147,10 @@
     &__content
         position: absolute
         z-index: 1
-        top: 160px
+        top: 135px
+        left: 0
+        right: 0
+        padding: 25px
     &__direction
         margin: 0 0 23px
         font-family: "Lato", sans-serif
@@ -239,6 +246,8 @@
         z-index: 1
         bottom: 0
         display: flex
+        justify-content: center
+        width: 100%
         padding: 13px 90px
         border-top: 1px solid #96E2E3
         border-left: 0
@@ -264,6 +273,7 @@
     border-radius: 10px
     overflow: hidden
     background-color: $color-w
+    text-decoration: none
     &__img-wrapper
         width: 263px
         height: 275px
@@ -282,10 +292,10 @@
 .article
     display: flex
     flex-direction: column
-    justify-content: space-between
     padding: 25px 25px 30px
     border-radius: 10px
     background-color: $color-w
+    text-decoration: none
     &__title
         margin: 0 0 5px
         font-family: "Roboto Slab", serif
@@ -309,6 +319,8 @@
 .customer
     grid-column: 3/4
     grid-row: 4/5
+    .article__text
+        margin-bottom: 30px
 .work
     grid-column: 2/3
     grid-row: 5/6
@@ -360,7 +372,7 @@
 .social
     grid-column: 4/5
     grid-row: 5/6
-    padding: 30px 25px 40px
+    padding: 30px 33px 40px
     border-radius: 10px
     background-color: $color-w
     &__title

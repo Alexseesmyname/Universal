@@ -35,7 +35,7 @@
         margin-left: 5px
     &__title
         width: 80%
-        margin: 0
+        margin: 0 0 30px
         font-family: "Roboto Slab", serif
         font-weight: 700
         font-size: 55px
@@ -53,6 +53,17 @@
         font-size: 18px
         line-height: 30px
         color: $text
+    .bookmark
+        position: absolute
+        left: -99px
+        top: 91px
+        flex-shrink: 0
+        width: 30px
+        height: 30px
+        fill: $color-w
+        opacity: 0.4
+        &_active
+            fill: #FF4F52
 .top
     position: relative
     background-image: url(../img/main-page/4.articles/1-article.png)
@@ -81,21 +92,8 @@
         justify-content: space-between
         align-items: center
         margin-bottom: 50px
-    &__middle-content
-        display: flex
-        align-items: flex-start
-        margin-bottom: 30px
     &__bottom-content
         margin-bottom: 72px
-    &__icon
-        position: absolute
-        left: -99px
-        top: 91px
-        flex-shrink: 0
-        width: 30px
-        height: 30px
-        fill: $color-w
-        opacity: 0.4
 .date
     display: flex
     align-items: center
@@ -121,7 +119,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    width: 23%
+    width: 23.5%
 .bottom
     padding: 60px 0 15px
     &__container
