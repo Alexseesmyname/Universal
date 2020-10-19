@@ -290,6 +290,7 @@
         line-height: 25px
         color: $title
 .article
+    position: relative
     display: flex
     flex-direction: column
     padding: 25px 25px 30px
@@ -304,11 +305,14 @@
         line-height: 25px
         color: $title
     &__text
-        margin: 0 0 10px
+        margin: 0 0 25px
         font-size: 14px
         line-height: 20px
         color: $text
     &__date
+        position: absolute
+        bottom: 30px
+        left: 25px
         margin: 0
         font-size: 12px
         line-height: 15px
@@ -319,8 +323,6 @@
 .customer
     grid-column: 3/4
     grid-row: 4/5
-    .article__text
-        margin-bottom: 30px
 .work
     grid-column: 2/3
     grid-row: 5/6

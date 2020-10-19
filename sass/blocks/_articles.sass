@@ -12,77 +12,76 @@
         background-color: $color-w
         border-radius: 10px
         overflow: hidden
-.item
-    position: relative
-    display: flex
-    justify-content: space-between
-    padding: 24.5px 0
-    border-bottom: 1px solid $lines
-    &:last-child
-        border-bottom: 0
-    &__img-wrapper
-        width: 336px
-        height: 195px
-    &__img
-        width: 100%
-        height: 100%
-        object-fit: cover
-    &__content
-        flex-basis: 54.7%
-    &__direction-wrapper
-        display: flex
-        align-items: center
-        justify-content: space-between
-    &__direction
-        padding-top: 5px
-        font-family: "Lato-bl", sans-serif
-        font-size: 12px
-        line-height: 15px
-        letter-spacing: 0.5px
-        text-transform: uppercase
-    .news
-        color: #4592ff
-    .opinion
-        color: #3BBDC4
-    .hot
-        color: #FF4F52
-    .collections
-        color: #AC8EE3
-
-    &__icon.bookmark
-        width: 20px
-        height: 20px
-        fill: #bcbfc2
-        cursor: pointer
-        &_active
-            fill: #FF4F52
-    &__title
-        margin: 15px 0 10px
-        font-family: "Roboto Slab",serif
-        font-weight: 700
-        font-size: 20px
-        line-height: 25px
-        color: $title
-    &__txt
-        margin: 0 0 20px
-        font-size: 14px
-        line-height: 20px
-        color: $text
-    &__info
-        position: absolute
-        bottom: 29px
-        left: 50%
-        transform: translateX(-24.5%)
+    .item
+        position: relative
         display: flex
         justify-content: space-between
-        align-items: center
-    .info__date
-        margin-right: 10px
-        font-size: 12px
-        line-height: 15px
-        color: $grey
-    &__comments
-        margin-right: 10px
+        padding: 24.5px 0
+        border-bottom: 1px solid $lines
+        &:last-child
+            border-bottom: 0
+        &__img-wrapper
+            width: 336px
+            height: 195px
+        &__img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &__content
+            flex-basis: 54.7%
+        &__direction-wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__direction
+            padding-top: 5px
+            font-family: "Lato-bl", sans-serif
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+        .news
+            color: #4592ff
+        .opinion
+            color: #3BBDC4
+        .hot
+            color: #FF4F52
+        .collections
+            color: #AC8EE3
+        .bookmark
+            width: 20px
+            height: 20px
+            fill: #bcbfc2
+            cursor: pointer
+            &_active
+                fill: #FF4F52
+        &__title
+            margin: 15px 0 10px
+            font-family: "Roboto Slab",serif
+            font-weight: 700
+            font-size: 20px
+            line-height: 25px
+            color: $title
+        &__txt
+            margin: 0 0 20px
+            font-size: 14px
+            line-height: 20px
+            color: $text
+        &__info
+            position: absolute
+            bottom: 29px
+            left: 50%
+            transform: translateX(-24.5%)
+            display: flex
+            justify-content: space-between
+            align-items: center
+        .info__date
+            margin-right: 10px
+            font-size: 12px
+            line-height: 15px
+            color: $grey
+        &__comments
+            margin-right: 10px
 .recent
     grid-column: 2/3
     grid-row: 1/2

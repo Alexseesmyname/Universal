@@ -30,7 +30,7 @@ document.querySelector(".tap").click();
 const marks = document.querySelectorAll(".bookmark");
 for(let mark of marks){
   mark.addEventListener("click", function(event){
-    mark.classList.toggle("item__icon_active");
+    mark.classList.toggle("bookmark_active");
   })
 };
 

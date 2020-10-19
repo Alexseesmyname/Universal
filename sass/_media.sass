@@ -85,8 +85,6 @@
         .customer
             grid-column: 2/3
             grid-row: 4/5
-            .article__text
-                margin: 0 0 10px
         .work
             grid-column: 1/2
             grid-row: 5/6
@@ -157,8 +155,6 @@
             &_sec
                 grid-column: 2/3
                 grid-row: 3/4
-            &-txt
-                margin: 0 0 30px
     .footer
         &-top
             .form
@@ -206,3 +202,47 @@
             &__year
                 display: flex
                 justify-content: flex-end
+
+@media ( max-width: 460px )
+    .container
+        width: 90%
+    .header
+        &-article
+            flex-direction: column
+            height: 593px
+        &-item
+            &__author
+                top: 20px
+                left: 20px
+            &__content
+                bottom: auto
+                top: 100px
+                left: 0
+                right: 0
+                width: 100%
+                padding: 20px
+            &__title
+                font-size: 24px
+                line-height: 30px
+        .recommended
+            &__tap
+                &-mobile_hidden
+                    display: none
+    .main
+        &__container
+            grid-template-columns: 1fr
+        .inner
+            grid-column: 1/2
+            flex-direction: column
+        .big-article
+            grid-column: 1/2
+        .middle-article
+            grid-column: 1/2
+        .little-article
+            grid-column: 1/2
+        .article
+            grid-column: 1/2
+        .download
+            grid-column: 1/2
+        .social
+            grid-column: 1/2
