@@ -8,7 +8,6 @@
     &__wrapper
         grid-column: 1/2
         grid-row: 1/3
-        padding: 0 25px
         background-color: $color-w
         border-radius: 10px
         overflow: hidden
@@ -16,7 +15,7 @@
         position: relative
         display: flex
         justify-content: space-between
-        padding: 24.5px 0
+        padding: 24.5px 25px
         border-bottom: 1px solid $lines
         text-decoration: none
         &:last-child
@@ -100,21 +99,20 @@
         color: $title
         text-transform: uppercase
         border-bottom: 1px solid $lines
-    &__article-wrapper
-        padding: 0 25px
     &__article
         position: relative
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 17px 0
+        padding: 17px 25px
         border-bottom: 1px solid $lines
+        text-decoration: none
         &:last-child
             border: 0
         &-bg
             position: absolute
             top: 20px
-            right: 0
+            right: 25px
             bottom: 24px
     &__bg-txt
         font-weight: 900
@@ -157,3 +155,4 @@
         border-right: 0
         border-left: 0
         background-color: $color-w
+        cursor: pointer
