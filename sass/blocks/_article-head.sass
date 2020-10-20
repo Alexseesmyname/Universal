@@ -1,5 +1,49 @@
 .article-head
+    position: relative
+    z-index: 1
+    background-image: url(../img/main-page/4.articles/1-article.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom 175px
     background-color: $color-w
+    height: 935px
+    &::after
+        content: ""
+        position: absolute
+        z-index: 2
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    &__bg_wite
+        position: absolute
+        z-index: 3
+        bottom: 0
+        left: 0
+        right: 0
+        height: 341px
+        background-color: #fff
+    &__container.container
+        position: absolute
+        z-index: 10
+        top: 45px
+        left: 0
+        right: 0
+        width: 946px
+    &__upper-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+    &__txt
+        width: 65%
+        &::first-letter
+            font-family: "Lato-bl", sans-serif
+            font-size: 100px
+            line-height: 75px
+            float: left
+            color: #4592ff
     &__direction
         font-family: "Lato-bl", sans-serif
         font-size: 12px
@@ -24,6 +68,7 @@
             font-size: 14px
             line-height: 20px
             color: $color-w
+
     .home-link
         margin-right: 10px
     .home,.back,.forward
@@ -44,7 +89,7 @@
         color: $color-w
     &__subtitle
         width: 67%
-        margin: 0 0 45px
+        margin: 0 0 42px
         font-size: 18px
         line-height: 30px
         color: $color-w
@@ -56,8 +101,8 @@
         color: $text
     .bookmark
         position: absolute
-        left: -99px
-        top: 91px
+        left: -98px
+        top: 104px
         flex-shrink: 0
         width: 30px
         height: 30px
@@ -66,36 +111,12 @@
         cursor: pointer
         &_active
             fill: #FF4F52
-.top
-    position: relative
-    background-image: url(../img/main-page/4.articles/1-article.png)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
-    height: 590px
-    &::after
-        content: ""
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
-    &__container.container
-        position: absolute
-        z-index: 1
-        top: 60px
-        left: 0
-        right: 0
-        width: 946px
-        height: 590px
-    &__upper-content
+    &__info
         display: flex
-        justify-content: space-between
         align-items: center
-        margin-bottom: 50px
-    &__bottom-content
-        margin-bottom: 72px
+        justify-content: space-between
+        width: 23.5%
+        margin-bottom: 130px
 .date
     display: flex
     align-items: center
@@ -117,35 +138,16 @@
 .article-head__comments-number
     color: $color-w
     opacity: 0.85
-.article-head__info
-    display: flex
-    align-items: center
-    justify-content: space-between
-    width: 23.5%
-.bottom
-    padding: 63px 0 15px
-    &__container
-        position: relative
-        width: 946px
-        display: flex
-        justify-content: space-between
-    &__txt
-        flex-basis: 65%
-        &::first-letter
-            font-family: "Lato-bl", sans-serif
-            font-size: 100px
-            line-height: 75px
-            float: left
-            color: #4592ff
+
 .article-author
     position: absolute
     z-index: 5
     right: 0
+    top: 445px
     display: flex
     flex-direction: column
     align-items: center
     height: max-content
-    margin-top: -160px
     border: 1px solid $lines
     border-radius: 10px
     background-color: $color-w
