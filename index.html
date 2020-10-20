@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Издание Universal</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
@@ -28,7 +30,7 @@
       <div class="container">
         <div class="navbar">
           <div class="navbar_mobile">
-            <div class="navbar__logo-wrapper">
+            <a href="#" class="navbar__logo-wrapper">
               <svg class="navbar__logo-icon">
                 <use xlink:href="img/sprite.svg#header-main-logo"></use>
               </svg>
@@ -37,7 +39,7 @@
                 alt="Логотип"
                 class="navbar__logo-icon_mobile"
               />
-            </div>
+            </a>
             <!-- /.navbar__logo-wrapper -->
             <a href="#" class="menu-button menu-button_mobile">
               <div class="menu-button__line"></div>
@@ -357,7 +359,7 @@
     <section class="main">
       <div class="container main__container">
         <div class="inner">
-          <a href="#" class="inner__article">
+          <a href="article.html" class="inner__article">
             <h4 class="inner__title">
               25 способов<br />
               настроить слайдер
@@ -370,7 +372,7 @@
               />
             </div>
           </a>
-          <a href="#" class="inner__article">
+          <a href="article.html" class="inner__article">
             <h4 class="inner__title">
               Главные фишки<br />
               фрилансера
@@ -383,7 +385,7 @@
               />
             </div>
           </a>
-          <a href="#" class="inner__article">
+          <a href="article.html" class="inner__article">
             <h4 class="inner__title">
               Техника управления<br />
               временем "Помодоро"
@@ -396,7 +398,7 @@
               />
             </div>
           </a>
-          <a href="#" class="inner__article">
+          <a href="article.html" class="inner__article">
             <h4 class="inner__title">
               Что нужно знать о Git<br />
               и GitHub
@@ -605,17 +607,25 @@
         <div class="social">
           <h3 class="social__title">Наши соцсети</h3>
           <div class="social__links">
-            <a href="#" class="social__link">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="social__link"
+            >
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
             </a>
-            <a href="#" class="social__link">
+            <a href="https://twitter.com/" target="_blank" class="social__link">
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#main-twitter"></use>
               </svg>
             </a>
-            <a href="#" class="social__link">
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="social__link"
+            >
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#yt"></use>
               </svg>
@@ -649,7 +659,7 @@
     <section class="articles">
       <div class="container articles__container">
         <div class="articles__wrapper">
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/1-article.png"
@@ -694,9 +704,9 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/2-article.png"
@@ -741,9 +751,9 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/3-article.png"
@@ -789,9 +799,9 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/4-article.png"
@@ -837,9 +847,9 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/5-article.png"
@@ -882,9 +892,9 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
-          <div class="item articles__item">
+          <a href="article.html" class="item articles__item">
             <div class="item__img-wrapper">
               <img
                 src="img/main-page/4.articles/1-article.png"
@@ -930,7 +940,7 @@
               <!-- /.item__info -->
             </div>
             <!-- /.item__content -->
-          </div>
+          </a>
           <!-- /.articles__item -->
         </div>
         <!-- /.arcticles__wrapper -->
@@ -1043,9 +1053,7 @@
               <!-- /.recent__txt-wrapper -->
             </div>
             <!-- /.recent__article -->
-            <div
-              class="recent__article recent__article_mobile recent__article_mobile_no-border"
-            >
+            <div class="recent__article recent__article_mobile_no-border">
               <div class="recent__article-bg">
                 <span class="recent__bg-txt">6</span>
               </div>
