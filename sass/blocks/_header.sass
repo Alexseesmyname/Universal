@@ -64,20 +64,30 @@
         border-radius: 10px
         overflow: hidden
         &__item
+            position: relative
             flex-basis: 77%
-            background-image: url(../img/main-page/1.header/article-bg.jpg)
-            background-size: cover
-            background-repeat: no-repeat
             overflow: hidden
         &__recommended
             flex-basis: 23%
             background-color: $color-w
+        &__bg-wrapper
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 1
+        &__bg-img
+            width: 100%
+            height: 100%
+            object-fit: cover
     &-item
         display: none
         &_active
             display: block
         &__author
             position: absolute
+            z-index: 10
             top: 55px
             left: 55px
             display: flex
@@ -88,6 +98,10 @@
             margin-right: 10px
             border-radius: 50%
             overflow: hidden
+        &__avatar
+            width: 100%
+            height: 100%
+            object-fit: cover
         &__name
             margin: 0 0 2px
             font-size: 14px
@@ -102,6 +116,7 @@
             opacity: 0.4
         &__content
             position: absolute
+            z-index: 10
             bottom: 100px
             left: 55px
             width: 45%
@@ -133,14 +148,6 @@
                 font-size: 14px
                 line-height: 20px
                 color: $color-w
-                &_red
-                    color: red
-                &_black
-                    color: black
-                &_yellow
-                    color: yellow
-                &_coral
-                    color: coral
             &__icon
                 width: 20px
                 height: 20px
