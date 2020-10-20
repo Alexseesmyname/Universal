@@ -1,5 +1,794 @@
+@media (max-width: 1180px)
+    .container
+        width: 922px
+    .header
+        .navbar
+
+            .search
+                width: 29%
+        &-article
+            height: max-content
+            margin-top: 15px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 105px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+    .main
+        &__container
+            grid-template-columns: repeat(2,32.7%) 1fr
+            grid-gap: 20px
+        .inner
+            grid-column: 1/4
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/4
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 5px
+            &__comments
+                margin-left: 5px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 4/6
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 3/4
+            grid-row: 2/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 3/4
+            grid-row: 4/5
+        .customer
+            grid-column: 3/4
+            grid-row: 5/6
+        .work
+            grid-column: 3/4
+            grid-row: 6/7
+        .free
+            display: none
+            grid-column: 3/4
+            grid-row: 7/8
+        .tags
+            grid-column: 2/3
+            grid-row: 4/6
+            &__content
+                padding: 25px 20px 30px 25px
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .night
+            margin-bottom: 15px
+        .download
+            grid-column: 1/2
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 6/7
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 80%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr 28%
+            column-gap: 20px
+        .item
+            &__img-wrapper
+                height: 279px
+            &__content
+                flex-basis: 39%
+            &__title
+                margin: 5px 0 5px
+            &__info
+                left: 67.5%
+        .recent
+            display: block
+
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(3,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 607px
+                &__title
+                    font-size: 24px
+                    line-height: 30px
+        .bottom-article
+            grid-column: 3/4
+            grid-row: 1/2
+            width: 100%
+            height: 100%
+            &__content
+                width: 60%
+            &__bg-circle
+                right: -50px
+                bottom: 50px
+                top: 60px
+                width: 260px
+                height: 260px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 2/3
+            &_sec
+                grid-column: 2/3
+                grid-row: 2/3
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 37%
+                &__input
+                    width: 100%
+        &-middle
+            &__text-wrapper
+                flex-basis: 65%
+            &__social
+                flex-basis: 30%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
+
+@media (max-width: 1024px)
+    .container
+        width: 898.5px
+    .header
+        .navbar
+            flex-wrap: wrap
+            .menu
+                flex-basis: 100%
+                order: 1
+                margin-top: 25px
+                &__link
+                    font-size: 16px
+                    line-height: 20px
+            .search
+                width: 39.4%
+        &-article
+            height: max-content
+            margin-top: 15px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 105px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+    .main
+        &__container
+            grid-template-columns: repeat(2,32.7%) 1fr
+            grid-gap: 20px
+        .inner
+            grid-column: 1/4
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/4
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 5px
+            &__comments
+                margin-left: 5px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 4/6
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 3/4
+            grid-row: 2/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 3/4
+            grid-row: 4/5
+        .customer
+            grid-column: 3/4
+            grid-row: 5/6
+        .work
+            grid-column: 3/4
+            grid-row: 6/7
+        .free
+            display: none
+            grid-column: 3/4
+            grid-row: 7/8
+        .tags
+            grid-column: 2/3
+            grid-row: 4/6
+            &__content
+                padding: 25px 20px 30px 25px
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .night
+            margin-bottom: 15px
+        .download
+            grid-column: 1/2
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 6/7
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 80%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr 28%
+            column-gap: 20px
+        .item
+            &__img-wrapper
+                height: 279px
+            &__content
+                flex-basis: 39%
+            &__title
+                margin: 5px 0 5px
+            &__info
+                left: 67.5%
+        .recent
+            display: block
+
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(3,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 589px
+                &__title
+                    font-size: 24px
+                    line-height: 30px
+        .bottom-article
+            grid-column: 3/4
+            grid-row: 1/2
+            width: 100%
+            height: 100%
+            &__content
+                width: 60%
+            &__bg-circle
+                right: -50px
+                bottom: 50px
+                top: 60px
+                width: 260px
+                height: 260px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 2/3
+            &_sec
+                grid-column: 2/3
+                grid-row: 2/3
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 37%
+                &__input
+                    width: 100%
+        &-middle
+            &__text-wrapper
+                flex-basis: 65%
+            &__social
+                flex-basis: 30%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
 
 @media (max-width: 992px)
+    .container
+        width: 812px
+    .header
+        .navbar
+            flex-wrap: wrap
+            .menu
+                flex-basis: 100%
+                order: 1
+                margin-top: 25px
+                &__link
+                    font-size: 16px
+                    line-height: 20px
+            .search
+                width: 39.4%
+        &-article
+            height: max-content
+            margin-top: 15px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 75px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+        .recommended
+            &__title
+                margin: 10px 0
+                padding: 0 15px
+                font-size: 12px
+                line-height: 15px
+            &__tap
+                min-height: 71px
+                padding: 10px 15px
+        .tap
+            &__txt
+                font-size: 12px
+                line-height: 15px
+    .main
+        &__container
+            grid-template-columns: repeat(2,32.7%) 1fr
+            grid-gap: 20px
+        .inner
+            grid-column: 1/4
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/4
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 5px
+            &__comments
+                margin-left: 5px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 4/6
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 3/4
+            grid-row: 2/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 3/4
+            grid-row: 4/5
+        .customer
+            grid-column: 3/4
+            grid-row: 5/6
+        .work
+            grid-column: 3/4
+            grid-row: 6/7
+        .free
+            display: none
+            grid-column: 3/4
+            grid-row: 7/8
+        .tags
+            grid-column: 2/3
+            grid-row: 4/6
+            &__content
+                padding: 25px 20px 30px 25px
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .night
+            margin-bottom: 15px
+        .download
+            grid-column: 1/2
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 6/7
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 100%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr
+        .item
+
+            &__content
+                flex-basis: 52%
+            &__title
+                margin: 5px 0 5px
+            &__info
+                left: 52.9%
+        .recent
+            display: none
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 812px
+                    height: 518px
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+        .bottom-article
+            grid-column: 1/2
+            grid-row: 2/4
+            width: 100%
+            &__bg-circle
+                right: -50px
+                bottom: 50px
+                top: 60px
+                width: 260px
+                height: 260px
+        &__article
+            &_first
+                grid-column: 2/3
+                grid-row: 2/3
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 37%
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: repeat(3, 33.3%)
+            row-gap: 30px
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 3/4
+                grid-row: 1/2
+            &__courses
+                grid-column: 1/2
+                grid-row: 2/3
+            &__info
+                grid-column: 2/3
+                grid-row: 2/3
+            &__categories
+                grid-column: 3/4
+                grid-row: 2/3
+            &__inner
+                grid-column: 1/4
+                padding: 30px 0 20px
+            &__text-wrapper
+                flex-basis: 75%
+            &__social
+                flex-basis: 20%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
+@media (max-width: 900px)
+    .container
+        width: 749px
+    .header
+        .navbar
+            flex-wrap: wrap
+            .menu
+                flex-basis: 100%
+                order: 1
+                margin-top: 25px
+                &__link
+                    font-size: 16px
+                    line-height: 20px
+            .search
+                width: 39.4%
+        &-article
+            height: max-content
+            margin-top: 15px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 75px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+        .recommended
+            &__title
+                margin: 10px 0
+                padding: 0 15px
+                font-size: 12px
+                line-height: 15px
+            &__tap
+                min-height: 71px
+                padding: 10px 15px
+        .tap
+            &__txt
+                font-size: 12px
+                line-height: 15px
+    .main
+        &__container
+            grid-template-columns: repeat(2,1fr)
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 10px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 2/3
+            grid-row: 3/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 1/2
+            grid-row: 4/5
+        .customer
+            grid-column: 2/3
+            grid-row: 4/5
+        .work
+            grid-column: 1/2
+            grid-row: 5/6
+        .free
+            grid-column: 2/3
+            grid-row: 5/6
+        .tags
+            grid-column: 1/2
+            grid-row: 6/8
+            &__content
+                padding: 25px 25px 30px 35px
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .download
+            grid-column: 2/3
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 7/8
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 100%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr
+        .item
+            &__img-wrapper
+                height: 279px
+            &__content
+                flex-basis: 48%
+            &__info
+                left: 57.3%
+        .recent
+            display: none
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 749px
+                    height: 518px
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+        .bottom-article
+            grid-column: 1/3
+            grid-row: 2/3
+            width: 100%
+            &__bg-circle
+                right: 40px
+                bottom: 50px
+                top: 60px
+                width: 280px
+                height: 280px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 47%
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: repeat(3, 33.3%)
+            row-gap: 30px
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 3/4
+                grid-row: 1/2
+            &__courses
+                grid-column: 1/2
+                grid-row: 2/3
+            &__info
+                grid-column: 2/3
+                grid-row: 2/3
+            &__categories
+                grid-column: 3/4
+                grid-row: 2/3
+            &__inner
+                grid-column: 1/4
+                padding: 30px 0 20px
+            &__text-wrapper
+                flex-basis: 75%
+            &__social
+                flex-basis: 20%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
+@media (max-width: 831px)
     .container
         width: 670px
     .header
@@ -78,7 +867,7 @@
             &__img-wrapper
                 width: 100%
         .article
-            justify-content: space-between
+
         .lucky
             grid-column: 1/2
             grid-row: 4/5
@@ -96,6 +885,8 @@
             grid-row: 6/8
             &__content
                 padding: 25px 35px 30px
+        .night
+            margin-bottom: 15px
         .download
             grid-column: 2/3
             grid-row: 6/7
@@ -106,6 +897,7 @@
     .investigation
         padding: 30px 0 35px
         &__title
+            width: 100%
             font-size: 34px
             line-height: 42px
     .articles
@@ -117,6 +909,8 @@
                 height: 279px
             &__content
                 flex-basis: 42%
+            &__title
+                margin: 5px 0 5px
             &__info
                 left: 64%
         .recent
@@ -132,8 +926,7 @@
                 grid-column: 1/3
                 grid-row: 1/2
                 &__container
-                    max-width: 670px
-                    width: 100%
+                    width: 670px
                     height: 518px
                 &__title
                     font-size: 36px
@@ -163,6 +956,8 @@
                     line-height: 42px
                 &__input-group
                     flex-basis: 47%
+                &__input
+                    width: 100%
         &-middle
             grid-template-columns: repeat(3, 33.3%)
             row-gap: 30px
@@ -203,24 +998,1145 @@
                 display: flex
                 justify-content: flex-end
 
-@media ( max-width: 460px )
+@media ( max-width: 760px )
     .container
-        width: 90%
+        width: 632px
     .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 632px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+                &-button
+                    display: block
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            height: max-content
+            margin-top: 72.8px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 75px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+        .recommended
+            &__title
+                margin: 10px 0
+                padding: 0 15px
+                font-size: 12px
+                line-height: 15px
+            &__tap
+                min-height: 71px
+                padding: 10px 15px
+        .tap
+            &__txt
+                font-size: 12px
+                line-height: 15px
+    .main
+        &__container
+            grid-template-columns: repeat(2,1fr)
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 10px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 2/3
+            grid-row: 3/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 1/2
+            grid-row: 4/5
+        .customer
+            grid-column: 2/3
+            grid-row: 4/5
+        .work
+            grid-column: 1/2
+            grid-row: 5/6
+        .free
+            grid-column: 2/3
+            grid-row: 5/6
+        .tags
+            grid-column: 1/2
+            grid-row: 6/8
+            &__content
+                padding: 25px 35px 30px
+        .download
+            grid-column: 2/3
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 7/8
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 100%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        padding: 40px 0
+        &__container
+            grid-template-columns: 1fr
+        .item
+            &__img-wrapper
+                height: 279px
+            &__content
+                flex-basis: 40%
+            &__title
+                margin: 5px 0 5px
+            &__info
+                left: 66.4%
+        .recent
+            display: none
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 632px
+                    height: 518px
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+        .bottom-article
+            grid-column: 1/3
+            grid-row: 2/3
+            width: 100%
+            &__bg-circle
+                right: 40px
+                bottom: 50px
+                top: 60px
+                width: 280px
+                height: 280px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 47%
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: repeat(3, 33.3%)
+            row-gap: 30px
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 3/4
+                grid-row: 1/2
+            &__courses
+                grid-column: 1/2
+                grid-row: 2/3
+            &__info
+                grid-column: 2/3
+                grid-row: 2/3
+            &__categories
+                grid-column: 3/4
+                grid-row: 2/3
+            &__inner
+                grid-column: 1/4
+                padding: 30px 0 20px
+            &__text-wrapper
+                flex-basis: 75%
+            &__social
+                flex-basis: 20%
+                display: flex
+                flex-wrap: wrap
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
+@media ( max-width: 700px )
+    .container
+        width: 585px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 585px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+                &-button
+                    display: block
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            height: max-content
+            margin-top: 72.8px
+            &__item
+                flex-basis: 70%
+            &__recommended
+                flex-basis: 30%
+        &-item
+            background-position: center
+            &__author
+                top: 35px
+                left: 40px
+            &__content
+                left: 40px
+                bottom: 75px
+                width: 58%
+            &__title
+                font-size: 36px
+                line-height: 50px
+        .recommended
+            &__title
+                margin: 10px 0
+                padding: 0 15px
+                font-size: 12px
+                line-height: 15px
+            &__tap
+                min-height: 71px
+                padding: 10px 15px
+        .tap
+            &__txt
+                font-size: 12px
+                line-height: 15px
+    .main
+        &__container
+            grid-template-columns: repeat(2,1fr)
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            &__article
+                flex-direction: column-reverse
+                padding: 0 5px
+            &__title
+                margin: 5px 0 0
+                text-align: center
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__author
+                justify-content: flex-start
+            &__avatar-wrapper
+                margin-right: 10px
+            &__name
+                margin-right: 10px
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            &__content
+                top: 140px
+        .little-article
+            grid-column: 2/3
+            grid-row: 3/4
+            &__img-wrapper
+                width: 100%
+        .article
+
+        .lucky
+            grid-column: 1/2
+            grid-row: 4/5
+        .customer
+            grid-column: 2/3
+            grid-row: 4/5
+        .work
+            grid-column: 1/2
+            grid-row: 5/6
+        .free
+            grid-column: 2/3
+            grid-row: 5/6
+        .tags
+            grid-column: 1/2
+            grid-row: 6/8
+            &__content
+                padding: 25px 35px 30px
+        .download
+            grid-column: 2/3
+            grid-row: 6/7
+        .social
+            grid-column: 2/3
+            grid-row: 7/8
+            padding: 30px 40px 40px
+    .investigation
+        padding: 30px 0 35px
+        &__title
+            width: 100%
+            font-size: 34px
+            line-height: 42px
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-column: 1/2
+            grid-row: 2/3
+            &__article-wrapper
+                display: grid
+                grid-template-columns: repeat(2,49%)
+                column-gap: 15px
+            &__article
+                &:nth-child(2n)
+                    grid-column: 2/3
+                &:last-child
+                    display: none
+                &_mobile_no-border
+                    border-bottom: 0
+    .bottom-content
+        &__container
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: auto
+            column-gap: 30px
+            row-gap: 30px
+        .swiper
+            &-slider
+                grid-column: 1/3
+                grid-row: 1/2
+                &__container
+                    width: 585px
+                    height: 518px
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+        .bottom-article
+            grid-column: 1/3
+            grid-row: 2/3
+            width: 100%
+            &__bg-circle
+                right: 40px
+                bottom: 50px
+                top: 60px
+                width: 280px
+                height: 280px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            .form
+                &__title
+                    font-size: 36px
+                    line-height: 42px
+                &__input-group
+                    flex-basis: 47%
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: repeat(3, 33.3%)
+            row-gap: 30px
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 3/4
+                grid-row: 1/2
+            &__courses
+                grid-column: 1/2
+                grid-row: 2/3
+            &__info
+                grid-column: 2/3
+                grid-row: 2/3
+            &__categories
+                grid-column: 3/4
+                grid-row: 2/3
+            &__inner
+                grid-column: 1/4
+                padding: 30px 0 20px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+                &-link
+                    margin-bottom: 10px
+        &-bottom
+            display: block
+            &__text
+                width: 100%
+            &__year
+                display: flex
+                justify-content: flex-end
+@media ( max-width: 650px )
+    .container
+        width: 502px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 502px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+                &-button
+                    display: block
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
         &-article
             flex-direction: column
-            height: 593px
+            height: 664px
+            margin-top: 72.8px
         &-item
             &__author
                 top: 20px
-                left: 20px
+                left: 18px
             &__content
                 bottom: auto
-                top: 100px
+                top: 60px
                 left: 0
                 right: 0
+                width: 288px
+                padding: 20px 18px
+            &__title
+                font-size: 24px
+                line-height: 30px
+        .recommended
+            &__tap
+                &-mobile_hidden
+                    display: none
+    .main
+        &__container
+            grid-template-columns: 48.3% 48.3%
+            grid-template-rows: auto
+            column-gap: 15px
+            row-gap: 15px
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            flex-direction: column
+            align-items: flex-start
+            width: 288px
+            padding: 5px 20px
+            &__article
+                flex-basis: 100%
+                flex-direction: row
                 width: 100%
-                padding: 20px
+                padding: 15px 0
+                border-right: 0
+                border-bottom: 1px solid $text
+                &:last-child
+                    border-bottom: 0
+            &__title
+                text-align: left
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__background-wrapper
+                display: none
+            &__content-inner
+                width: 100%
+                padding: 25px 20px 35px
+            &__text_mobile
+                display: none
+            &__author
+                padding: 13px 20px
+                justify-content: space-between
+            &__name
+                margin-right: 0
+                &_mobile
+                    display: none
+            &__comments
+                flex-basis: 64%
+                justify-content: flex-end
+        .middle-article
+            grid-column: 1/3
+            grid-row: 3/4
+            height: 370px
+            &__content
+                top: 120px
+        .little-article
+            grid-column: 1/3
+            grid-row: 4/5
+        .lucky
+            grid-column: 1/2
+            grid-row: 5/6
+        .customer
+            grid-column: 2/2
+            grid-row: 5/6
+        .work
+            grid-column: 1/2
+            grid-row: 6/7
+        .free
+            grid-column: 2/2
+            grid-row: 6/7
+        .download
+            grid-column: 1/2
+            grid-row: 8/9
+            height: 180px
+        .tags
+            grid-column: 1/3
+            grid-row: 7/8
+            &__content
+                padding: 25px 60px 30px 25px
+        .night,
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .night
+            margin-right: 0
+        .social
+            grid-column: 2/2
+            grid-row: 8/9
+            padding: 30px 20px 40px
+    .investigation
+        &__title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-row: 2/3
+            grid-column: 1/2
+            width: 288px
+            &__article
+                &_mobile
+                    display: none
+    .bottom-content
+        &__container
+            grid-template-columns: 48.3% 48.3%
+            column-gap: 15px
+            .swiper
+                &-slider
+                    grid-column: 1/3
+                    grid-row: 1/2
+                    &__container
+                        width: 502px
+                        height: 400px
+                    &__content
+                        left: 0
+                        right: 0
+                        padding: 0 5px
+                    &__title
+                        width: 70%
+                        margin: 0 0 30px
+                        font-size: 18px
+                        line-height: 24px
+            .bottom-article
+                grid-column: 1/3
+                grid-row: 2/3
+                &__bg-circle
+                    width: 260px
+                    height: 260px
+                    left: 49%
+                    right: 0
+                &__content
+                    left: 0
+                    width: 80%
+                    padding: 0 25px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            padding: 30px 0 0
+            margin-bottom: 40px
+            .form
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-size: 18px
+                    line-height: 24px
+                &__input-group
+                    flex-basis: auto
+                    width: 325px
+                    margin-bottom: 15px
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: 50% 50%
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 1/2
+                grid-row: 2/3
+            &__courses
+                grid-column: 2/3
+                grid-row: 2/3
+            &__info
+                grid-column: 1/2
+                grid-row: 3/4
+            &__categories
+                grid-column: 2/3
+                grid-row: 3/4
+            &__inner
+                grid-column: 1/3
+                grid-row: 4/5
+                margin-top: 0
+                padding: 30px 0 10px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+        &-bottom
+            &__text
+                margin: 0 0 15px
+            &__year
+                justify-content: flex-start
+@media ( max-width: 560px )
+    .container
+        width: 436px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 436px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+                &-button
+                    display: block
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            flex-direction: column
+            height: 664px
+            margin-top: 72.8px
+        &-item
+            &__author
+                top: 20px
+                left: 18px
+            &__content
+                bottom: auto
+                top: 60px
+                left: 0
+                right: 0
+                width: 288px
+                padding: 20px 18px
+            &__title
+                font-size: 24px
+                line-height: 30px
+        .recommended
+            &__tap
+                &-mobile_hidden
+                    display: none
+    .main
+        &__container
+            grid-template-columns: 48.3% 48.3%
+            grid-template-rows: auto
+            column-gap: 15px
+            row-gap: 15px
+        .inner
+            grid-column: 1/3
+            grid-row: 1/2
+            flex-direction: column
+            align-items: flex-start
+            width: 288px
+            padding: 5px 20px
+            &__article
+                flex-basis: 100%
+                flex-direction: row
+                width: 100%
+                padding: 15px 0
+                border-right: 0
+                border-bottom: 1px solid $text
+                &:last-child
+                    border-bottom: 0
+            &__title
+                text-align: left
+        .big-article
+            grid-column: 1/3
+            grid-row: 2/3
+            &__background-wrapper
+                display: none
+            &__content-inner
+                width: 100%
+                padding: 25px 20px 35px
+            &__text_mobile
+                display: none
+            &__author
+                padding: 13px 20px
+                justify-content: space-between
+            &__name
+                margin-right: 0
+                &_mobile
+                    display: none
+            &__comments
+                flex-basis: 58%
+                justify-content: flex-end
+        .middle-article
+            grid-column: 1/3
+            grid-row: 3/4
+            height: 370px
+            &__content
+                top: 120px
+        .little-article
+            grid-column: 1/3
+            grid-row: 4/5
+        .lucky
+            grid-column: 1/2
+            grid-row: 5/6
+        .customer
+            grid-column: 2/2
+            grid-row: 5/6
+        .work
+            grid-column: 1/2
+            grid-row: 6/7
+        .free
+            grid-column: 2/2
+            grid-row: 6/7
+        .download
+            grid-column: 1/2
+            grid-row: 8/9
+            height: 180px
+        .tags
+            grid-column: 1/3
+            grid-row: 7/8
+            &__content
+                padding: 25px 70px 30px 25px
+        .night,
+        .animals
+            margin-bottom: 15px
+        .sun
+            margin-right: 10px
+        .social
+            grid-column: 2/2
+            grid-row: 8/9
+            padding: 30px 20px 40px
+    .investigation
+        &__title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-row: 2/3
+            grid-column: 1/2
+            width: 288px
+            &__article
+                &_mobile
+                    display: none
+    .bottom-content
+        &__container
+            grid-template-columns: 48.3% 48.3%
+            column-gap: 15px
+            .swiper
+                &-slider
+                    grid-column: 1/3
+                    grid-row: 1/2
+                    &__container
+                        width: 436px
+                        height: 400px
+                    &__content
+                        left: 0
+                        right: 0
+                        padding: 0 5px
+                    &__title
+                        margin: 0 0 30px
+                        font-size: 18px
+                        line-height: 24px
+            .bottom-article
+                grid-column: 1/3
+                grid-row: 2/3
+                &__bg-circle
+                    width: 260px
+                    height: 260px
+                    left: 49%
+                    right: 0
+                &__content
+                    left: 0
+                    width: 80%
+                    padding: 0 25px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 2/3
+                grid-row: 3/4
+    .footer
+        &-top
+            padding: 30px 0 0
+            margin-bottom: 40px
+            .form
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-size: 18px
+                    line-height: 24px
+                &__input-group
+                    flex-basis: auto
+                    width: 325px
+                    margin-bottom: 15px
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: 50% 50%
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 1/2
+                grid-row: 2/3
+            &__courses
+                grid-column: 2/3
+                grid-row: 2/3
+            &__info
+                grid-column: 1/2
+                grid-row: 3/4
+            &__categories
+                grid-column: 2/3
+                grid-row: 3/4
+            &__inner
+                grid-column: 1/3
+                grid-row: 4/5
+                margin-top: 0
+                padding: 30px 0 10px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+        &-bottom
+            &__text
+                margin: 0 0 15px
+            &__year
+                justify-content: flex-start
+@media ( max-width: 480px )
+    .container
+        width: 377px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 377px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            flex-direction: column
+            height: 664px
+            margin-top: 72.8px
+        &-item
+            &__author
+                top: 20px
+                left: 18px
+            &__content
+                bottom: auto
+                top: 60px
+                left: 0
+                right: 0
+                width: 288px
+                padding: 20px 18px
             &__title
                 font-size: 24px
                 line-height: 30px
@@ -231,18 +2147,751 @@
     .main
         &__container
             grid-template-columns: 1fr
+            grid-template-rows: auto
+            column-gap: 0
+            row-gap: 15px
         .inner
             grid-column: 1/2
+            grid-row: 1/2
             flex-direction: column
+            align-items: flex-start
+            padding: 5px 20px
+            &__article
+                flex-basis: 100%
+                flex-direction: row
+                width: 100%
+                padding: 15px 0
+                border-right: 0
+                border-bottom: 1px solid $text
+                &:last-child
+                    border-bottom: 0
+            &__title
+                text-align: left
         .big-article
             grid-column: 1/2
+            grid-row: 2/3
+            &__background-wrapper
+                display: none
+            &__content-inner
+                width: 100%
+                padding: 25px 20px 35px
+            &__text_mobile
+                display: none
+            &__author
+                padding: 13px 20px
+                justify-content: space-between
+            &__name
+                margin-right: 0
+                &_mobile
+                    display: none
+            &__comments
+                flex-basis: 50%
+                justify-content: flex-end
         .middle-article
             grid-column: 1/2
+            grid-row: 3/4
+            height: 370px
+            &__content
+                top: 120px
         .little-article
             grid-column: 1/2
-        .article
+            grid-row: 4/5
+        .lucky
             grid-column: 1/2
+            grid-row: 5/6
+        .customer
+            grid-column: 1/2
+            grid-row: 6/7
+        .work
+            grid-column: 1/2
+            grid-row: 7/8
+        .free
+            grid-column: 1/2
+            grid-row: 8/9
         .download
             grid-column: 1/2
+            grid-row: 9/10
+        .tags
+            grid-column: 1/2
+            grid-row: 10/11
+            &__content
+                padding: 25px 70px 30px 25px
         .social
             grid-column: 1/2
+            grid-row: 11/12
+            padding: 30px 40px 40px
+    .investigation
+        &__title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-row: 2/3
+            grid-column: 1/2
+            width: 288px
+            &__article
+                &_mobile
+                    display: none
+    .bottom-content
+        &__container
+            grid-template-columns: 1fr
+            .swiper
+                &-slider
+                    grid-column: 1/2
+                    grid-row: 1/2
+                    &__container
+                        width: 377px
+                        height: 400px
+                    &__content
+                        left: 0
+                        right: 0
+                        padding: 0 5px
+                    &__title
+                        margin: 0 0 30px
+                        font-size: 18px
+                        line-height: 24px
+            .bottom-article
+                grid-column: 1/2
+                grid-row: 2/3
+                &__bg-circle
+                    width: 260px
+                    height: 260px
+                    left: 49%
+                    right: 0
+                &__content
+                    left: 0
+                    right: 0
+                    width: 100%
+                    padding: 0 25px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 1/2
+                grid-row: 4/5
+    .footer
+        &-top
+            padding: 30px 0 0
+            margin-bottom: 40px
+            .form
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-size: 18px
+                    line-height: 24px
+                &__input-group
+                    flex-basis: auto
+                    width: 325px
+                    margin-bottom: 15px
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: 50% 50%
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 2/3
+                grid-row: 1/2
+            &__video
+                grid-column: 1/2
+                grid-row: 2/3
+            &__courses
+                grid-column: 2/3
+                grid-row: 2/3
+            &__info
+                grid-column: 1/2
+                grid-row: 3/4
+            &__categories
+                grid-column: 2/3
+                grid-row: 3/4
+            &__inner
+                grid-column: 1/3
+                grid-row: 4/5
+                margin-top: 0
+                padding: 30px 0 10px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+        &-bottom
+            &__text
+                margin: 0 0 15px
+            &__year
+                justify-content: flex-start
+@media ( max-width: 419px )
+    .container
+        width: 325px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 325px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            flex-direction: column
+            height: 664px
+            margin-top: 72.8px
+        &-item
+            &__author
+                top: 20px
+                left: 18px
+            &__content
+                bottom: auto
+                top: 60px
+                left: 0
+                right: 0
+                width: 288px
+                padding: 20px 18px
+            &__title
+                font-size: 24px
+                line-height: 30px
+        .recommended
+            &__tap
+                &-mobile_hidden
+                    display: none
+    .main
+        &__container
+            grid-template-columns: 1fr
+            grid-template-rows: auto
+            column-gap: 0
+            row-gap: 15px
+        .inner
+            grid-column: 1/2
+            grid-row: 1/2
+            flex-direction: column
+            align-items: flex-start
+            padding: 5px 20px
+            &__article
+                flex-basis: 100%
+                flex-direction: row
+                width: 100%
+                padding: 15px 0
+                border-right: 0
+                border-bottom: 1px solid $text
+                &:last-child
+                    border-bottom: 0
+            &__title
+                text-align: left
+        .big-article
+            grid-column: 1/2
+            grid-row: 2/3
+            &__background-wrapper
+                display: none
+            &__content-inner
+                width: 100%
+                padding: 25px 20px 35px
+            &__text_mobile
+                display: none
+            &__author
+                padding: 13px 20px
+                justify-content: space-between
+            &__name
+                margin-right: 0
+                &_mobile
+                    display: none
+            &__comments
+                flex-basis: 47%
+                justify-content: flex-end
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            height: 370px
+            &__content
+                top: 120px
+        .little-article
+            grid-column: 1/2
+            grid-row: 4/5
+        .lucky
+            grid-column: 1/2
+            grid-row: 5/6
+        .customer
+            grid-column: 1/2
+            grid-row: 6/7
+        .work
+            grid-column: 1/2
+            grid-row: 7/8
+        .free
+            grid-column: 1/2
+            grid-row: 8/9
+        .download
+            grid-column: 1/2
+            grid-row: 9/10
+        .tags
+            grid-column: 1/2
+            grid-row: 10/11
+            &__content
+                padding: 25px 50px 30px 25px
+        .social
+            grid-column: 1/2
+            grid-row: 11/12
+    .investigation
+        &__title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-row: 2/3
+            grid-column: 1/2
+            width: 288px
+            &__article
+                &_mobile
+                    display: none
+    .bottom-content
+        &__container
+            grid-template-columns: 1fr
+            .swiper
+                &-slider
+                    grid-column: 1/2
+                    grid-row: 1/2
+                    &__container
+                        width: 325px
+                        height: 400px
+                    &__content
+                        left: 0
+                        right: 0
+                        padding: 0 5px
+                    &__title
+                        margin: 0 0 30px
+                        font-size: 18px
+                        line-height: 24px
+            .bottom-article
+                grid-column: 1/2
+                grid-row: 2/3
+                &__bg-circle
+                    width: 260px
+                    height: 260px
+                    left: 49%
+                    right: 0
+                &__content
+                    left: 0
+                    right: 0
+                    width: 100%
+                    padding: 0 25px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 1/2
+                grid-row: 4/5
+    .footer
+        &-top
+            padding: 30px 0 0
+            margin-bottom: 40px
+            .form
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-size: 18px
+                    line-height: 24px
+                &__input-group
+                    flex-basis: auto
+                    width: 325px
+                    margin-bottom: 15px
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: 100%
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 1/2
+                grid-row: 2/3
+            &__video
+                grid-column: 1/2
+                grid-row: 3/4
+            &__courses
+                grid-column: 1/2
+                grid-row: 4/5
+            &__info
+                grid-column: 1/2
+                grid-row: 5/6
+            &__categories
+                grid-column: 1/2
+                grid-row: 6/7
+            &__inner
+                grid-column: 1/2
+                grid-row: 7/8
+                margin-top: 0
+                padding: 30px 0 10px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+        &-bottom
+            &__text
+                margin: 0 0 15px
+            &__year
+                justify-content: flex-start
+@media ( max-width: 360px )
+    .container
+        width: 288px
+    .header
+        .navbar
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+            background-color: $title
+            &_mobile
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 288px
+                margin: 0 auto
+            &__logo-icon
+                display: none
+            &__logo-icon_mobile
+                display: inline
+            &__search
+                display: none
+            .menu
+                display: none
+                margin-top: 73px
+                &_active
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    z-index: 99
+                    width: 100%
+                    background-color: $title
+
+                &__list
+                    flex-direction: column
+                    align-items: center
+                &__item
+                    margin-bottom: 25px
+                    &:last-child
+                        margin-bottom: 0
+                &__search_mobile
+                    display: list-item
+                .search
+                    width: 100%
+        &-article
+            flex-direction: column
+            height: 664px
+            margin-top: 72.8px
+        &-item
+            &__author
+                top: 20px
+                left: 18px
+            &__content
+                bottom: auto
+                top: 60px
+                left: 0
+                right: 0
+                width: 288px
+                padding: 20px 18px
+            &__title
+                font-size: 24px
+                line-height: 30px
+        .recommended
+            &__tap
+                &-mobile_hidden
+                    display: none
+    .main
+        &__container
+            grid-template-columns: 1fr
+            grid-template-rows: auto
+            column-gap: 0
+            row-gap: 15px
+        .inner
+            grid-column: 1/2
+            grid-row: 1/2
+            flex-direction: column
+            align-items: flex-start
+            padding: 5px 20px
+            &__article
+                flex-basis: 100%
+                flex-direction: row
+                width: 100%
+                padding: 15px 0
+                border-right: 0
+                border-bottom: 1px solid $text
+                &:last-child
+                    border-bottom: 0
+            &__title
+                text-align: left
+        .big-article
+            grid-column: 1/2
+            grid-row: 2/3
+            &__background-wrapper
+                display: none
+            &__content-inner
+                width: 100%
+                padding: 25px 20px 35px
+            &__text_mobile
+                display: none
+            &__author
+                padding: 13px 20px
+                justify-content: space-between
+            &__name
+                margin-right: 0
+                &_mobile
+                    display: none
+            &__comments
+                flex-basis: 37%
+                justify-content: flex-end
+        .middle-article
+            grid-column: 1/2
+            grid-row: 3/4
+            height: 370px
+            &__content
+                top: 120px
+        .little-article
+            grid-column: 1/2
+            grid-row: 4/5
+        .lucky
+            grid-column: 1/2
+            grid-row: 5/6
+        .customer
+            grid-column: 1/2
+            grid-row: 6/7
+        .work
+            grid-column: 1/2
+            grid-row: 7/8
+        .free
+            grid-column: 1/2
+            grid-row: 8/9
+        .download
+            grid-column: 1/2
+            grid-row: 9/10
+        .tags
+            grid-column: 1/2
+            grid-row: 10/11
+        .social
+            grid-column: 1/2
+            grid-row: 11/12
+    .investigation
+        &__title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+    .articles
+        &__wrapper
+            grid-column: 1/2
+            grid-row: 1/2
+            padding: 0
+            background-color: inherit
+        .item
+            flex-direction: column
+            margin-bottom: 15px
+            padding: 0
+            border-radius: 10px
+            overflow: hidden
+            background-color: $color-w
+            &__img-wrapper
+                width: 100%
+                height: 176px
+                margin-bottom: 15px
+            &__content
+                padding: 0 15px
+            &__txt
+                margin: 0 0 40px
+            &__info
+                left: 52px
+                bottom: 20px
+        .recent
+            display: block
+            grid-row: 2/3
+            grid-column: 1/2
+            width: 288px
+            &__article
+                &_mobile
+                    display: none
+    .bottom-content
+        &__container
+            grid-template-columns: 1fr
+            .swiper
+                &-slider
+                    grid-column: 1/2
+                    grid-row: 1/2
+                    &__container
+                        width: 288px
+                        height: 400px
+                    &__content
+                        left: 0
+                        right: 0
+                        padding: 0 5px
+                    &__title
+                        margin: 0 0 30px
+                        font-size: 18px
+                        line-height: 24px
+            .bottom-article
+                grid-column: 1/2
+                grid-row: 2/3
+                &__bg-circle
+                    width: 260px
+                    height: 260px
+                    left: 49%
+                    right: 0
+                &__content
+                    left: 0
+                    right: 0
+                    width: 100%
+                    padding: 0 25px
+        &__article
+            &_first
+                grid-column: 1/2
+                grid-row: 3/4
+            &_sec
+                grid-column: 1/2
+                grid-row: 4/5
+    .footer
+        &-top
+            padding: 30px 0 0
+            margin-bottom: 40px
+            .form
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-size: 18px
+                    line-height: 24px
+                &__input-group
+                    flex-basis: auto
+                    width: 100%
+                    margin-bottom: 15px
+                &__input
+                    width: 100%
+        &-middle
+            grid-template-columns: 100%
+            &__news
+                grid-column: 1/2
+                grid-row: 1/2
+            &__articles
+                grid-column: 1/2
+                grid-row: 2/3
+            &__video
+                grid-column: 1/2
+                grid-row: 3/4
+            &__courses
+                grid-column: 1/2
+                grid-row: 4/5
+            &__info
+                grid-column: 1/2
+                grid-row: 5/6
+            &__categories
+                grid-column: 1/2
+                grid-row: 6/7
+            &__inner
+                grid-column: 1/2
+                grid-row: 7/8
+                margin-top: 0
+                padding: 30px 0 10px
+            &__text-wrapper
+                flex-direction: column
+                flex-basis: auto
+                align-items: flex-start
+            &__social
+                flex-direction: column
+                flex-basis: auto
+        &-bottom
+            &__text
+                margin: 0 0 15px
+            &__year
+                justify-content: flex-start

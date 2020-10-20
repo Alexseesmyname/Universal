@@ -27,14 +27,41 @@
       <div class="background"></div>
       <div class="container">
         <div class="navbar">
-          <div class="navbar__logo-wrapper">
-            <svg class="navbar__logo-icon">
-              <use xlink:href="img/sprite.svg#header-main-logo"></use>
-            </svg>
+          <div class="navbar_mobile">
+            <div class="navbar__logo-wrapper">
+              <svg class="navbar__logo-icon">
+                <use xlink:href="img/sprite.svg#header-main-logo"></use>
+              </svg>
+              <img
+                src="img/main-page/1.header/mobile-logo.svg"
+                alt="Логотип"
+                class="navbar__logo-icon_mobile"
+              />
+            </div>
+            <!-- /.navbar__logo-wrapper -->
+            <a href="#" class="menu-button menu-button_mobile">
+              <div class="menu-button__line"></div>
+              <div class="menu-button__line"></div>
+              <div class="menu-button__line"></div>
+            </a>
           </div>
-          <!-- /.navbar__logo-wrapper -->
+          <!-- /.navbar_mobile -->
           <nav class="menu navbar-menu">
             <ul class="menu__list">
+              <li class="menu__item menu__search_mobile">
+                <form action="#" class="search menu__search">
+                  <input
+                    class="search__input"
+                    type="text"
+                    placeholder="Поиск"
+                  />
+                  <button class="search__button">
+                    <svg class="search__button-icon">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                  </button>
+                </form>
+              </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Статьи</a>
               </li>
@@ -275,10 +302,7 @@
               </p>
             </div>
             <!-- /.recommended__tab -->
-            <div
-              class="tap recommended__tap recommended__tap-mobile_hidden"
-              data-tap="#tap-4"
-            >
+            <div class="tap recommended__tap" data-tap="#tap-4">
               <h4 class="tap__title web">WEB DESIGN</h4>
               <p class="tap__txt">ТОП-10 плагинов для Figma</p>
             </div>
@@ -390,8 +414,13 @@
               />
             </div>
             <!-- /.big-article__avatar-wrapper -->
-            <span class="big-article__name">Инна Квашова:</span>
-            <span class="big-article__text"
+            <span class="big-article__name"
+              >Инна Квашова<span
+                class="big-article__name big-article__name_mobile"
+                >:</span
+              ></span
+            >
+            <span class="big-article__text big-article__text_mobile"
               >Каждый разработчик мечтает переехать в...</span
             >
             <div class="comments big-article__comments">
@@ -574,8 +603,7 @@
       <div class="container">
         <div class="investigation__inner">
           <h2 class="investigation__title">
-            Расследование недели: сколько<br />
-            зарабатывает веб разработчик в Москве
+            Расследование недели: сколько зарабатывает веб разработчик в Москве
           </h2>
           <a href="article.html" class="investigation__link">
             <span class="investigation__text">Читать статью</span>
@@ -965,7 +993,7 @@
               <!-- /.recent__txt-wrapper -->
             </div>
             <!-- /.recent__article -->
-            <div class="recent__article">
+            <div class="recent__article recent__article_mobile_no-border">
               <div class="recent__article-bg">
                 <span class="recent__bg-txt">5</span>
               </div>
@@ -985,7 +1013,9 @@
               <!-- /.recent__txt-wrapper -->
             </div>
             <!-- /.recent__article -->
-            <div class="recent__article">
+            <div
+              class="recent__article recent__article_mobile recent__article_mobile_no-border"
+            >
               <div class="recent__article-bg">
                 <span class="recent__bg-txt">6</span>
               </div>
@@ -1005,7 +1035,7 @@
               <!-- /.recent__txt-wrapper -->
             </div>
             <!-- /.recent__article -->
-            <div class="recent__article">
+            <div class="recent__article recent__article_mobile">
               <div class="recent__article-bg">
                 <span class="recent__bg-txt">7</span>
               </div>
