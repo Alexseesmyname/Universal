@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Издание Universal</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery-3.5.1.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/article-page.js" defer></script>
+  </head>
+  <body>
+    <header class="header article-header">
+      <div class="container">
+        <div class="navbar article-navbar">
+          <a
+            href="index.html"
+            class="navbar__logo-wrapper article-navbar__logo-wrapper"
+          >
+            <svg class="navbar__logo-icon article-navbar__logo-icon">
+              <use xlink:href="img/sprite.svg#article-logo"></use>
+            </svg>
+            <svg class="navbar__logo-icon article-navbar__universal-icon">
+              <use xlink:href="img/sprite.svg#article-universal"></use>
+            </svg>
+          </a>
+          <!-- /.navbar__logo-wrapper -->
+          <nav class="menu navbar-menu article-navbar__menu">
+            <ul class="menu__list article-navbar__list">
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link">Статьи</a>
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link">Новости</a>
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link">Курсы</a>
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link">HTML</a>
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link">CSS</a>
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="menu__item article-navbar__item">
+                <a href="#" class="menu__link article-navbar__link"
+                  >Web Design</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form action="#" class="search navbar__search article-navbar__search">
+            <input
+              class="search__input article-navbar__input"
+              type="text"
+              placeholder="Поиск"
+            />
+            <button class="search__button article-navbar__button">
+              <svg class="search__button-icon article-navbar__button-icon">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- /.navbar -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="thank-you">
+      <div class="container thank-you__container">
+        <h1 class="thank-you__title">Спасибо</h1>
+        <p class="thank-you__txt">что выбрали нас</p>
+        <a href="index.html" class="thank-you__button">На главную</a>
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <form
+            action="article.php"
+            method="POST"
+            class="form footer-top__form"
+          >
+            <h2 class="form__title">Подпишитесь на нашу рассылку</h2>
+            <div class="form__input-group">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <button class="form__button button">
+              <span class="form__button-txt">Подписаться</span>
+            </button>
+          </form>
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-middle">
+          <div class="footer-middle__item footer-middle__news">
+            <h4 class="footer-middle__title">Новости</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">Обновления</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Экспресс</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Politics</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Solar Eclipse</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__item footer-middle__articles">
+            <h4 class="footer-middle__title">Статьи</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">HTML</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">CSS</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">JavaScript</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Web Design</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__item footer-middle__video">
+            <h4 class="footer-middle__title">Видеоуроки</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">Скринкасты</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Уроки</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Вебинары</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__item footer-middle__courses">
+            <h4 class="footer-middle__title">Курсы</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">Платные интенсивы</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Бесплатные стримы</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Мастер-классы</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Менторство</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Буткемпы</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__item footer-middle__info">
+            <h4 class="footer-middle__title">Информация</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">Политика данных</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Оферта сайта</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Реквизиты</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Контакты</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__item footer-middle__categories">
+            <h4 class="footer-middle__title">Категории</h4>
+            <ul class="list footer-middle__list">
+              <li class="list__item">
+                <a href="#" class="list__link">Популярное</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Горячее</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Подборки</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Мнения</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Карьера</a>
+              </li>
+            </ul>
+            <!-- /.footer-middle__list -->
+          </div>
+          <!-- /.footer-middle__item -->
+          <div class="footer-middle__inner">
+            <div class="footer-middle__text-wrapper">
+              <div class="footer-middle__logo-wrapper">
+                <a href="index.html" class="footer-middle__logo">
+                  <svg class="footer-middle__logo-icon">
+                    <use xlink:href="img/sprite.svg#footer-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /.footer-middle__logo-wrapper -->
+              <p class="footer-middle__text">Контакты</p>
+              <p class="footer-middle__text">Работа у нас</p>
+              <p class="footer-middle__text">Реклама</p>
+              <p class="footer-middle__text">Партнерство</p>
+            </div>
+            <!-- /.footer-middle__text-wrapper -->
+            <div class="footer-middle__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-middle__social-link"
+              >
+                <svg class="footer-middle__social-link-icon">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-middle__social-link"
+              >
+                <svg class="footer-middle__social-link-icon">
+                  <use xlink:href="img/sprite.svg#main-twitter"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer-middle__social-link"
+              >
+                <svg class="footer-middle__social-link-icon">
+                  <use xlink:href="img/sprite.svg#yt"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-middle__social-link"
+              >
+                <svg class="footer-middle__social-link-icon">
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.footer-middle__social -->
+          </div>
+          <!-- /.footer-middle__inner -->
+        </div>
+        <!-- /.footer-middle -->
+        <div class="footer-bottom">
+          <p class="footer-bottom__text">
+            Universal &mdash; это онлайн издание, в котором мы публикуем
+            полезные материалы о веб разработке: статьи, новости, видеоуроки,
+            подборки, ссылки и курсы. Материалы на сайте бесплатны, но при
+            копировании, указывайте ссылку.
+          </p>
+          <p class="footer-bottom__year">&copy; 2020 Universal Magazine</p>
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>
+</html>

@@ -50,4 +50,4 @@ try {
     }
 
     // Отображение результата
-    header ("Location: index.html");
+    header ("Location: thank-you.html");

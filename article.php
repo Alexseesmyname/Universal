@@ -71,4 +71,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header ("Location: article.html");
+header ("Location: thank-you.html");
