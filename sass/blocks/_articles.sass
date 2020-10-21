@@ -11,6 +11,8 @@
         background-color: $color-w
         border-radius: 10px
         overflow: hidden
+    &__item-wrapper
+        position: relative
     .item
         position: relative
         display: flex
@@ -48,13 +50,6 @@
             color: #FF4F52
         .collections
             color: #AC8EE3
-        .bookmark
-            width: 20px
-            height: 20px
-            fill: #bcbfc2
-            cursor: pointer
-            &_active
-                fill: #FF4F52
         &__title
             margin: 15px 0 10px
             font-family: "Roboto Slab",serif
@@ -82,6 +77,18 @@
             color: $grey
         &__comments
             margin-right: 10px
+
+    .bookmark
+        position: absolute
+        right: 25px
+        top: 25px
+        z-index: 15
+        width: 20px
+        height: 20px
+        fill: #bcbfc2
+        cursor: pointer
+        &_active
+            fill: #FF4F52
 .recent
     grid-column: 2/3
     grid-row: 1/2
