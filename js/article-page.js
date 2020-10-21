@@ -62,5 +62,18 @@ mobileBtn.addEventListener("click", function(){
 });
 
 //Кнопка наверх
+window.addEventListener("scroll", trackScroll);
+const btn = document.querySelector(".footer-bottom__button");
+
+function trackScroll (){
+let scrolled = window.pageYOffset;
+
+if( scrolled > 350){
+  btn.classList.add("footer-bottom__button_active");
+}
+if(scrolled < 350)  {
+  btn.classList.remove("footer-bottom__button_active");
+} 
+};
 
 });
