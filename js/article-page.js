@@ -52,5 +52,12 @@ $(".review__form").validate({
 });
 $(".review__form").on("DOMNodeInserted", function(){
     $("#message-error").addClass("message-error");
-})
+});
+
+//Мобильное меню
+const mobileBtn = document.querySelector(".menu-button");
+const menu = document.querySelector(".menu")
+mobileBtn.addEventListener("click", function(){
+  menu.classList.toggle("menu_active");
+});
 });

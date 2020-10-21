@@ -28,20 +28,47 @@
     <header class="header article-header">
       <div class="container">
         <div class="navbar article-navbar">
-          <a
-            href="index.html"
-            class="navbar__logo-wrapper article-navbar__logo-wrapper"
-          >
-            <svg class="navbar__logo-icon article-navbar__logo-icon">
-              <use xlink:href="img/sprite.svg#article-logo"></use>
-            </svg>
-            <svg class="navbar__logo-icon article-navbar__universal-icon">
-              <use xlink:href="img/sprite.svg#article-universal"></use>
-            </svg>
-          </a>
-          <!-- /.navbar__logo-wrapper -->
+          <div class="navbar_mobile">
+            <a
+              href="index.html"
+              class="navbar__logo-wrapper article-navbar__logo-wrapper"
+            >
+              <svg class="navbar__logo-icon article-navbar__logo-icon">
+                <use xlink:href="img/sprite.svg#article-logo"></use>
+              </svg>
+              <svg class="navbar__logo-icon article-navbar__universal-icon">
+                <use xlink:href="img/sprite.svg#article-universal"></use>
+              </svg>
+              <img
+                src="img/main-page/1.header/mobile-logo.svg"
+                alt="Логотип"
+                class="navbar__logo-icon_mobile"
+              />
+            </a>
+            <a href="#" class="menu-button menu-button_mobile">
+              <div class="menu-button__line"></div>
+              <div class="menu-button__line"></div>
+              <div class="menu-button__line"></div>
+            </a>
+            <!-- /.navbar__logo-wrapper -->
+          </div>
+          <!-- /.navbar_mobile -->
           <nav class="menu navbar-menu article-navbar__menu">
             <ul class="menu__list article-navbar__list">
+              <li class="menu__item menu__search_mobile">
+                <form action="#" class="search menu__search">
+                  <input
+                    class="search__input"
+                    type="text"
+                    placeholder="Поиск"
+                  />
+                  <button class="search__button">
+                    <svg class="search__button-icon">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                  </button>
+                </form>
+              </li>
               <li class="menu__item article-navbar__item">
                 <a href="#" class="menu__link article-navbar__link">Статьи</a>
               </li>
@@ -260,11 +287,8 @@
                 <div class="article-swiper__description">
                   <span class="article-swiper__description-txt"
                     >Ducimus dolore consequatur beatae numquam dignissimos
-                    voluptatum the application of statistical methodology Lorem
-                    ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-                    numquam sit consequatur architecto magni veritatis
-                    reiciendis. Dolores porro reprehenderit illo.</span
-                  >
+                    voluptatum the application of statistical methodology
+                  </span>
                   <div
                     class="article-swiper__description-author description-author"
                   >
@@ -301,13 +325,8 @@
                 <div class="article-swiper__description">
                   <span class="article-swiper__description-txt"
                     >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quaerat alias, aperiam animi odio, accusamus laudantium
-                    sequi reiciendis aut minus dolores delectus esse iure
-                    excepturi eos blanditiis? Amet sunt nam maxime.
-                    Geostatistics deal with quantitative data analysis,
-                    specifically the application of statistical
-                    methodology</span
-                  >
+                    Quaerat alias, aperiam animi odio, accusamus
+                  </span>
                   <div
                     class="article-swiper__description-author description-author"
                   >
@@ -1267,6 +1286,9 @@
             копировании, указывайте ссылку.
           </p>
           <p class="footer-bottom__year">&copy; 2020 Universal Magazine</p>
+          <a href="#" class="footer-bottom__button">
+            <div class="footer-bottom__button-icon"></div>
+          </a>
         </div>
         <!-- /.footer-bottom -->
       </div>
