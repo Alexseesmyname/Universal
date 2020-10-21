@@ -60,4 +60,7 @@ const menu = document.querySelector(".menu")
 mobileBtn.addEventListener("click", function(){
   menu.classList.toggle("menu_active");
 });
+
+//Кнопка наверх
+
 });

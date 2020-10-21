@@ -71,4 +71,6 @@ mobileBtn.addEventListener("click", function(){
   menu.classList.toggle("menu_active");
 });
 
+//Кнопка наверх
+
 });
