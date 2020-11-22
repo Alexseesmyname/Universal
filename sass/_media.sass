@@ -2657,6 +2657,7 @@
             width: 100%
         &__review
             width: 100%
+            height: 295px
     .answer-item
         padding-left: 60px
     .review__inner
@@ -2667,8 +2668,13 @@
     .review__avatar-wrapper
         width: 65px
         height: 65px
+        margin-right: auto
+        margin-left: auto
     .review__textarea
         margin-bottom: 25px
+    .review__title
+        text-align: center
+        margin: 5px 0 15px
 @media ( max-width: 480px )
     .container
         width: 377px
@@ -3068,17 +3074,15 @@
     .answer-item
         padding-left: 60px
     .review
-        height: 315px
-    .review__inner
-        flex-direction: column
-        padding: 30px 30px 35px
+        &__inner
+            flex-direction: column
+            padding: 30px 30px 35px
     .big-angle,.little-angle
         display: none
     .review__avatar-wrapper
         width: 65px
         height: 65px
-    .review__textarea
-        margin-bottom: 40px
+
 @media ( max-width: 419px )
     .container
         width: 325px
@@ -3496,7 +3500,7 @@
     .answer-item
         padding-left: 30px
     .review
-        height: 335px
+        height: 320px
     .review__inner
         flex-direction: column
         padding: 30px 30px 35px
@@ -3505,8 +3509,6 @@
     .review__avatar-wrapper
         width: 65px
         height: 65px
-    .review__textarea
-        margin-bottom: 40px
 @media ( max-width: 360px )
     .container
         width: 288px
@@ -3768,7 +3770,7 @@
         margin-top: 70px
     .article-head
         margin-top: 70px
-        height: 1080px
+        height: 1125px
         &__container.container
             width: 288px
         &__bg_wite
@@ -3829,6 +3831,9 @@
         .description-author
             padding: 10px 20px
     .article-body
+        padding: 20px 0 15px
+        &__title
+            margin: 0 0 20px
         &__text
             width: 100%
             margin-bottom: 15px
@@ -3913,7 +3918,8 @@
     .answer-item
         padding-left: 30px
     .review
-        height: 335px
+        &__title
+            text-align: center
     .review__inner
         flex-direction: column
         padding: 30px 30px 35px
@@ -3922,5 +3928,3 @@
     .review__avatar-wrapper
         width: 65px
         height: 65px
-    .review__textarea
-        margin-bottom: 50px
